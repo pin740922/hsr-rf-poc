@@ -194,7 +194,7 @@ function normalizePointLevels(points) {
 }
 
 const MAX_GAP_M = 1200;
-const TWM_4G_LAYERS = ["L7", "L9", "L18", "L21", "L26"];
+const HOME_4G_LAYERS = ["L7", "L9", "L18", "L21", "L26"];
 const MDT_REGION_CHAIN_IDX = { N1: [0, 2], N2: [2, 4], C: [5, 8], S: [9, 11] };
 
 /** 高鐵站由北（南港）至南（左營） */
@@ -437,7 +437,7 @@ function updateMdtLayerOptions() {
   const op = document.getElementById("mdtOperator").value;
   const layerSel = document.getElementById("mdtLayer");
   layerSel.innerHTML = "";
-  if (op === "TWM") {
+  if (op === "本網業者") {
     layerSel.add(new Option("Max RSRP", "maxRSRP"));
     const layers = manifest.mdt_layers || { L21: { label: "4G L21" }, L26: { label: "4G L26" } };
     Object.entries(layers).forEach(([id, info]) => {
@@ -756,9 +756,9 @@ function pointLevelFromRsrp(rsrp) {
 function buildTwmMaxRsrpDataset(regions, start, end, date) {
   const byLoc = new Map();
   regions.forEach((region) => {
-    TWM_4G_LAYERS.forEach((layer) => {
+    HOME_4G_LAYERS.forEach((layer) => {
       const ds = mdtData.datasets.find(
-        (d) => d.operator === "TWM" && d.segment_id === region && d.date === date && d.layer === layer
+        (d) => d.operator === "本網業者" && d.segment_id === region && d.date === date && d.layer === layer
       );
       ds?.points?.forEach((p) => {
         // 本網 Max RSRP：取各頻段來源 K 欄 MAXRSRP，再跨 5 頻段取最大
@@ -775,9 +775,9 @@ function buildTwmMaxRsrpDataset(regions, start, end, date) {
   if (!points.length) return null;
   const stats = computeStatsFromPoints(points);
   return {
-    id: `mdt-view-twm-maxRSRP-${start}-${end}-${date}`,
+    id: `mdt-view-home-maxRSRP-${start}-${end}-${date}`,
     segment_name: `${start}→${end}`,
-    operator: "TWM",
+    operator: "本網業者",
     layer: "maxRSRP",
     tech: "4G",
     date,
@@ -793,12 +793,12 @@ function buildMdtViewDataset(start, end, op, layer, date) {
   const regions = getMdtRegionsForSegment(start, end);
   if (!regions.length) return null;
 
-  if (op === "TWM" && layer === "maxRSRP") {
+  if (op === "本網業者" && layer === "maxRSRP") {
     return buildTwmMaxRsrpDataset(regions, start, end, date);
   }
 
-  // 競業（CHT/FET）：以 ifMDT 資料集，依屬性 avg/max 取值
-  if (op !== "TWM") {
+  // 競業（競業A/競業B）：以 ifMDT 資料集，依屬性 avg/max 取值
+  if (op !== "本網業者") {
     const attr = layer === "ifMDT_max" ? "max" : "avg";
     let allPoints = [];
     regions.forEach((region) => {
@@ -908,7 +908,7 @@ function buildMaxRsrpDataset(op) {
   const seg = getMdtSegmentStations();
   if (!seg) return null;
   const date = document.getElementById("mdtDate").value;
-  const layer = op === "TWM" ? "maxRSRP" : "ifMDT_max";
+  const layer = op === "本網業者" ? "maxRSRP" : "ifMDT_max";
   return buildMdtViewDataset(seg.start, seg.end, op, layer, date);
 }
 
@@ -1158,8 +1158,8 @@ function renderMdtResult(ds) {
 }
 
 const MDT_CELL_DEG = 0.001; // 約 110m 網格，用於本網/競業同位置交集
-const CMP_WIN_COLOR = "#2a52e8"; // 藍：主業者（TWM）贏
-const CMP_LOSE_COLOR = "#e60000"; // 紅：主業者（TWM）輸
+const CMP_WIN_COLOR = "#2a52e8"; // 藍：主業者（本網業者）贏
+const CMP_LOSE_COLOR = "#e60000"; // 紅：主業者（本網業者）輸
 
 function binPointsByCell(points) {
   const cells = new Map();

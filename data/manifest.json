@@ -1,11 +1,11 @@
 {
   "version": 3,
-  "generated_from": "C:\\Users\\tsuwang\\Desktop\\我的資料夾\\PIN_Cursor\\test1\\TWM_DT_MDT_HSR_25m\\DT",
-  "mdt_source": "C:\\Users\\tsuwang\\Desktop\\我的資料夾\\PIN_Cursor\\test1\\TWM_DT_MDT_HSR_25m\\MDT",
+  "generated_from": "C:\\Users\\tsuwang\\Desktop\\我的資料夾\\PIN_Cursor\\test1\\本網業者_DT_MDT_HSR_25m\\DT",
+  "mdt_source": "C:\\Users\\tsuwang\\Desktop\\我的資料夾\\PIN_Cursor\\test1\\本網業者_DT_MDT_HSR_25m\\MDT",
   "mdt_operators": [
-    "TWM",
-    "CHT",
-    "FET"
+    "本網業者",
+    "競業A",
+    "競業B"
   ],
   "stations": [
     {
@@ -1742,10 +1742,10 @@
   ],
   "mdt_datasets": [
     {
-      "id": "mdt-cht-N1-20260112",
+      "id": "mdt-競業A-N1-20260112",
       "segment_id": "N1",
       "segment_name": "北段",
-      "operator": "CHT",
+      "operator": "競業A",
       "layer": "ifMDT",
       "tech": "4G",
       "date": "20260112",
@@ -1776,10 +1776,10 @@
       }
     },
     {
-      "id": "mdt-fet-N1-20260112",
+      "id": "mdt-競業B-N1-20260112",
       "segment_id": "N1",
       "segment_name": "北段",
-      "operator": "FET",
+      "operator": "競業B",
       "layer": "ifMDT",
       "tech": "4G",
       "date": "20260112",
@@ -1810,10 +1810,10 @@
       }
     },
     {
-      "id": "mdt-twm-N1-L7-20260112",
+      "id": "mdt-home-N1-L7-20260112",
       "segment_id": "N1",
       "segment_name": "北段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L7",
       "tech": "4G",
       "date": "20260112",
@@ -1843,10 +1843,10 @@
       }
     },
     {
-      "id": "mdt-twm-N1-L9-20260112",
+      "id": "mdt-home-N1-L9-20260112",
       "segment_id": "N1",
       "segment_name": "北段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L9",
       "tech": "4G",
       "date": "20260112",
@@ -1876,10 +1876,10 @@
       }
     },
     {
-      "id": "mdt-twm-N1-L18-20260112",
+      "id": "mdt-home-N1-L18-20260112",
       "segment_id": "N1",
       "segment_name": "北段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L18",
       "tech": "4G",
       "date": "20260112",
@@ -1909,10 +1909,10 @@
       }
     },
     {
-      "id": "mdt-twm-N1-L21-20260112",
+      "id": "mdt-home-N1-L21-20260112",
       "segment_id": "N1",
       "segment_name": "北段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L21",
       "tech": "4G",
       "date": "20260112",
@@ -1942,10 +1942,10 @@
       }
     },
     {
-      "id": "mdt-twm-N1-L26-20260112",
+      "id": "mdt-home-N1-L26-20260112",
       "segment_id": "N1",
       "segment_name": "北段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L26",
       "tech": "4G",
       "date": "20260112",
@@ -1975,10 +1975,10 @@
       }
     },
     {
-      "id": "mdt-cht-N1-20260316",
+      "id": "mdt-競業A-N1-20260316",
       "segment_id": "N1",
       "segment_name": "北段",
-      "operator": "CHT",
+      "operator": "競業A",
       "layer": "ifMDT",
       "tech": "4G",
       "date": "20260316",
@@ -2009,10 +2009,10 @@
       }
     },
     {
-      "id": "mdt-fet-N1-20260316",
+      "id": "mdt-競業B-N1-20260316",
       "segment_id": "N1",
       "segment_name": "北段",
-      "operator": "FET",
+      "operator": "競業B",
       "layer": "ifMDT",
       "tech": "4G",
       "date": "20260316",
@@ -2043,10 +2043,10 @@
       }
     },
     {
-      "id": "mdt-twm-N1-L7-20260316",
+      "id": "mdt-home-N1-L7-20260316",
       "segment_id": "N1",
       "segment_name": "北段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L7",
       "tech": "4G",
       "date": "20260316",
@@ -2076,10 +2076,10 @@
       }
     },
     {
-      "id": "mdt-twm-N1-L9-20260316",
+      "id": "mdt-home-N1-L9-20260316",
       "segment_id": "N1",
       "segment_name": "北段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L9",
       "tech": "4G",
       "date": "20260316",
@@ -2109,10 +2109,10 @@
       }
     },
     {
-      "id": "mdt-twm-N1-L18-20260316",
+      "id": "mdt-home-N1-L18-20260316",
       "segment_id": "N1",
       "segment_name": "北段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L18",
       "tech": "4G",
       "date": "20260316",
@@ -2142,10 +2142,10 @@
       }
     },
     {
-      "id": "mdt-twm-N1-L21-20260316",
+      "id": "mdt-home-N1-L21-20260316",
       "segment_id": "N1",
       "segment_name": "北段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L21",
       "tech": "4G",
       "date": "20260316",
@@ -2175,10 +2175,10 @@
       }
     },
     {
-      "id": "mdt-twm-N1-L26-20260316",
+      "id": "mdt-home-N1-L26-20260316",
       "segment_id": "N1",
       "segment_name": "北段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L26",
       "tech": "4G",
       "date": "20260316",
@@ -2208,10 +2208,10 @@
       }
     },
     {
-      "id": "mdt-cht-N2-20260112",
+      "id": "mdt-競業A-N2-20260112",
       "segment_id": "N2",
       "segment_name": "北中段",
-      "operator": "CHT",
+      "operator": "競業A",
       "layer": "ifMDT",
       "tech": "4G",
       "date": "20260112",
@@ -2242,10 +2242,10 @@
       }
     },
     {
-      "id": "mdt-fet-N2-20260112",
+      "id": "mdt-競業B-N2-20260112",
       "segment_id": "N2",
       "segment_name": "北中段",
-      "operator": "FET",
+      "operator": "競業B",
       "layer": "ifMDT",
       "tech": "4G",
       "date": "20260112",
@@ -2276,10 +2276,10 @@
       }
     },
     {
-      "id": "mdt-twm-N2-L7-20260112",
+      "id": "mdt-home-N2-L7-20260112",
       "segment_id": "N2",
       "segment_name": "北中段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L7",
       "tech": "4G",
       "date": "20260112",
@@ -2309,10 +2309,10 @@
       }
     },
     {
-      "id": "mdt-twm-N2-L9-20260112",
+      "id": "mdt-home-N2-L9-20260112",
       "segment_id": "N2",
       "segment_name": "北中段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L9",
       "tech": "4G",
       "date": "20260112",
@@ -2342,10 +2342,10 @@
       }
     },
     {
-      "id": "mdt-twm-N2-L18-20260112",
+      "id": "mdt-home-N2-L18-20260112",
       "segment_id": "N2",
       "segment_name": "北中段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L18",
       "tech": "4G",
       "date": "20260112",
@@ -2375,10 +2375,10 @@
       }
     },
     {
-      "id": "mdt-twm-N2-L21-20260112",
+      "id": "mdt-home-N2-L21-20260112",
       "segment_id": "N2",
       "segment_name": "北中段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L21",
       "tech": "4G",
       "date": "20260112",
@@ -2408,10 +2408,10 @@
       }
     },
     {
-      "id": "mdt-twm-N2-L26-20260112",
+      "id": "mdt-home-N2-L26-20260112",
       "segment_id": "N2",
       "segment_name": "北中段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L26",
       "tech": "4G",
       "date": "20260112",
@@ -2441,10 +2441,10 @@
       }
     },
     {
-      "id": "mdt-cht-N2-20260316",
+      "id": "mdt-競業A-N2-20260316",
       "segment_id": "N2",
       "segment_name": "北中段",
-      "operator": "CHT",
+      "operator": "競業A",
       "layer": "ifMDT",
       "tech": "4G",
       "date": "20260316",
@@ -2475,10 +2475,10 @@
       }
     },
     {
-      "id": "mdt-fet-N2-20260316",
+      "id": "mdt-競業B-N2-20260316",
       "segment_id": "N2",
       "segment_name": "北中段",
-      "operator": "FET",
+      "operator": "競業B",
       "layer": "ifMDT",
       "tech": "4G",
       "date": "20260316",
@@ -2509,10 +2509,10 @@
       }
     },
     {
-      "id": "mdt-twm-N2-L7-20260316",
+      "id": "mdt-home-N2-L7-20260316",
       "segment_id": "N2",
       "segment_name": "北中段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L7",
       "tech": "4G",
       "date": "20260316",
@@ -2542,10 +2542,10 @@
       }
     },
     {
-      "id": "mdt-twm-N2-L9-20260316",
+      "id": "mdt-home-N2-L9-20260316",
       "segment_id": "N2",
       "segment_name": "北中段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L9",
       "tech": "4G",
       "date": "20260316",
@@ -2575,10 +2575,10 @@
       }
     },
     {
-      "id": "mdt-twm-N2-L18-20260316",
+      "id": "mdt-home-N2-L18-20260316",
       "segment_id": "N2",
       "segment_name": "北中段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L18",
       "tech": "4G",
       "date": "20260316",
@@ -2608,10 +2608,10 @@
       }
     },
     {
-      "id": "mdt-twm-N2-L21-20260316",
+      "id": "mdt-home-N2-L21-20260316",
       "segment_id": "N2",
       "segment_name": "北中段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L21",
       "tech": "4G",
       "date": "20260316",
@@ -2641,10 +2641,10 @@
       }
     },
     {
-      "id": "mdt-twm-N2-L26-20260316",
+      "id": "mdt-home-N2-L26-20260316",
       "segment_id": "N2",
       "segment_name": "北中段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L26",
       "tech": "4G",
       "date": "20260316",
@@ -2674,10 +2674,10 @@
       }
     },
     {
-      "id": "mdt-cht-C-20260112",
+      "id": "mdt-競業A-C-20260112",
       "segment_id": "C",
       "segment_name": "中段",
-      "operator": "CHT",
+      "operator": "競業A",
       "layer": "ifMDT",
       "tech": "4G",
       "date": "20260112",
@@ -2708,10 +2708,10 @@
       }
     },
     {
-      "id": "mdt-fet-C-20260112",
+      "id": "mdt-競業B-C-20260112",
       "segment_id": "C",
       "segment_name": "中段",
-      "operator": "FET",
+      "operator": "競業B",
       "layer": "ifMDT",
       "tech": "4G",
       "date": "20260112",
@@ -2742,10 +2742,10 @@
       }
     },
     {
-      "id": "mdt-twm-C-L7-20260112",
+      "id": "mdt-home-C-L7-20260112",
       "segment_id": "C",
       "segment_name": "中段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L7",
       "tech": "4G",
       "date": "20260112",
@@ -2775,10 +2775,10 @@
       }
     },
     {
-      "id": "mdt-twm-C-L9-20260112",
+      "id": "mdt-home-C-L9-20260112",
       "segment_id": "C",
       "segment_name": "中段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L9",
       "tech": "4G",
       "date": "20260112",
@@ -2808,10 +2808,10 @@
       }
     },
     {
-      "id": "mdt-twm-C-L18-20260112",
+      "id": "mdt-home-C-L18-20260112",
       "segment_id": "C",
       "segment_name": "中段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L18",
       "tech": "4G",
       "date": "20260112",
@@ -2841,10 +2841,10 @@
       }
     },
     {
-      "id": "mdt-twm-C-L21-20260112",
+      "id": "mdt-home-C-L21-20260112",
       "segment_id": "C",
       "segment_name": "中段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L21",
       "tech": "4G",
       "date": "20260112",
@@ -2874,10 +2874,10 @@
       }
     },
     {
-      "id": "mdt-twm-C-L26-20260112",
+      "id": "mdt-home-C-L26-20260112",
       "segment_id": "C",
       "segment_name": "中段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L26",
       "tech": "4G",
       "date": "20260112",
@@ -2907,10 +2907,10 @@
       }
     },
     {
-      "id": "mdt-cht-C-20260316",
+      "id": "mdt-競業A-C-20260316",
       "segment_id": "C",
       "segment_name": "中段",
-      "operator": "CHT",
+      "operator": "競業A",
       "layer": "ifMDT",
       "tech": "4G",
       "date": "20260316",
@@ -2941,10 +2941,10 @@
       }
     },
     {
-      "id": "mdt-fet-C-20260316",
+      "id": "mdt-競業B-C-20260316",
       "segment_id": "C",
       "segment_name": "中段",
-      "operator": "FET",
+      "operator": "競業B",
       "layer": "ifMDT",
       "tech": "4G",
       "date": "20260316",
@@ -2975,10 +2975,10 @@
       }
     },
     {
-      "id": "mdt-twm-C-L7-20260316",
+      "id": "mdt-home-C-L7-20260316",
       "segment_id": "C",
       "segment_name": "中段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L7",
       "tech": "4G",
       "date": "20260316",
@@ -3008,10 +3008,10 @@
       }
     },
     {
-      "id": "mdt-twm-C-L9-20260316",
+      "id": "mdt-home-C-L9-20260316",
       "segment_id": "C",
       "segment_name": "中段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L9",
       "tech": "4G",
       "date": "20260316",
@@ -3041,10 +3041,10 @@
       }
     },
     {
-      "id": "mdt-twm-C-L18-20260316",
+      "id": "mdt-home-C-L18-20260316",
       "segment_id": "C",
       "segment_name": "中段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L18",
       "tech": "4G",
       "date": "20260316",
@@ -3074,10 +3074,10 @@
       }
     },
     {
-      "id": "mdt-twm-C-L21-20260316",
+      "id": "mdt-home-C-L21-20260316",
       "segment_id": "C",
       "segment_name": "中段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L21",
       "tech": "4G",
       "date": "20260316",
@@ -3107,10 +3107,10 @@
       }
     },
     {
-      "id": "mdt-twm-C-L26-20260316",
+      "id": "mdt-home-C-L26-20260316",
       "segment_id": "C",
       "segment_name": "中段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L26",
       "tech": "4G",
       "date": "20260316",
@@ -3140,10 +3140,10 @@
       }
     },
     {
-      "id": "mdt-cht-S-20260112",
+      "id": "mdt-競業A-S-20260112",
       "segment_id": "S",
       "segment_name": "南段",
-      "operator": "CHT",
+      "operator": "競業A",
       "layer": "ifMDT",
       "tech": "4G",
       "date": "20260112",
@@ -3174,10 +3174,10 @@
       }
     },
     {
-      "id": "mdt-fet-S-20260112",
+      "id": "mdt-競業B-S-20260112",
       "segment_id": "S",
       "segment_name": "南段",
-      "operator": "FET",
+      "operator": "競業B",
       "layer": "ifMDT",
       "tech": "4G",
       "date": "20260112",
@@ -3208,10 +3208,10 @@
       }
     },
     {
-      "id": "mdt-twm-S-L7-20260112",
+      "id": "mdt-home-S-L7-20260112",
       "segment_id": "S",
       "segment_name": "南段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L7",
       "tech": "4G",
       "date": "20260112",
@@ -3241,10 +3241,10 @@
       }
     },
     {
-      "id": "mdt-twm-S-L9-20260112",
+      "id": "mdt-home-S-L9-20260112",
       "segment_id": "S",
       "segment_name": "南段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L9",
       "tech": "4G",
       "date": "20260112",
@@ -3274,10 +3274,10 @@
       }
     },
     {
-      "id": "mdt-twm-S-L18-20260112",
+      "id": "mdt-home-S-L18-20260112",
       "segment_id": "S",
       "segment_name": "南段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L18",
       "tech": "4G",
       "date": "20260112",
@@ -3307,10 +3307,10 @@
       }
     },
     {
-      "id": "mdt-twm-S-L21-20260112",
+      "id": "mdt-home-S-L21-20260112",
       "segment_id": "S",
       "segment_name": "南段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L21",
       "tech": "4G",
       "date": "20260112",
@@ -3340,10 +3340,10 @@
       }
     },
     {
-      "id": "mdt-twm-S-L26-20260112",
+      "id": "mdt-home-S-L26-20260112",
       "segment_id": "S",
       "segment_name": "南段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L26",
       "tech": "4G",
       "date": "20260112",
@@ -3373,10 +3373,10 @@
       }
     },
     {
-      "id": "mdt-cht-S-20260316",
+      "id": "mdt-競業A-S-20260316",
       "segment_id": "S",
       "segment_name": "南段",
-      "operator": "CHT",
+      "operator": "競業A",
       "layer": "ifMDT",
       "tech": "4G",
       "date": "20260316",
@@ -3407,10 +3407,10 @@
       }
     },
     {
-      "id": "mdt-fet-S-20260316",
+      "id": "mdt-競業B-S-20260316",
       "segment_id": "S",
       "segment_name": "南段",
-      "operator": "FET",
+      "operator": "競業B",
       "layer": "ifMDT",
       "tech": "4G",
       "date": "20260316",
@@ -3441,10 +3441,10 @@
       }
     },
     {
-      "id": "mdt-twm-S-L7-20260316",
+      "id": "mdt-home-S-L7-20260316",
       "segment_id": "S",
       "segment_name": "南段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L7",
       "tech": "4G",
       "date": "20260316",
@@ -3474,10 +3474,10 @@
       }
     },
     {
-      "id": "mdt-twm-S-L9-20260316",
+      "id": "mdt-home-S-L9-20260316",
       "segment_id": "S",
       "segment_name": "南段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L9",
       "tech": "4G",
       "date": "20260316",
@@ -3507,10 +3507,10 @@
       }
     },
     {
-      "id": "mdt-twm-S-L18-20260316",
+      "id": "mdt-home-S-L18-20260316",
       "segment_id": "S",
       "segment_name": "南段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L18",
       "tech": "4G",
       "date": "20260316",
@@ -3540,10 +3540,10 @@
       }
     },
     {
-      "id": "mdt-twm-S-L21-20260316",
+      "id": "mdt-home-S-L21-20260316",
       "segment_id": "S",
       "segment_name": "南段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L21",
       "tech": "4G",
       "date": "20260316",
@@ -3573,10 +3573,10 @@
       }
     },
     {
-      "id": "mdt-twm-S-L26-20260316",
+      "id": "mdt-home-S-L26-20260316",
       "segment_id": "S",
       "segment_name": "南段",
-      "operator": "TWM",
+      "operator": "本網業者",
       "layer": "L26",
       "tech": "4G",
       "date": "20260316",
