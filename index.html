@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html lang="zh-TW">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TWM 高鐵訊號品質查詢系統</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+  <link rel="stylesheet" href="styles.css?v=20260605b">
+
+</head>
+
+<body data-theme="light">
+
+  <div class="page-watermark" aria-hidden="true">Amdocs - Pin Wang</div>
+
+  <header class="header">
+
+    <div>
+
+      <h1 data-en="TWM HSR Signal Quality System">TWM 高鐵訊號品質查詢系統</h1>
+
+      <p class="subtitle" data-en="Full-line Drive Test · MDT Data Integration/Comparison">全線路測．MDT 數據資訊 整合/比對</p>
+
+    </div>
+
+    <div class="header-badges">
+
+      <button type="button" id="langToggle" class="theme-toggle" title="切換語言 / Switch language">中文 / EN</button>
+
+      <button type="button" id="themeToggle" class="theme-toggle" title="切換地圖主題">🌙 暗色</button>
+
+    </div>
+
+  </header>
+
+
+
+  <nav class="mode-tabs">
+
+    <button type="button" class="tab active" data-mode="dt" data-en="Drive Test DT">路測 DT</button>
+
+    <button type="button" class="tab" data-mode="mdt" data-en="MDT Integration">MDT 整合</button>
+
+  </nav>
+
+
+
+  <main class="layout">
+
+    <aside class="panel">
+
+      <!-- DT 路測路線 -->
+
+      <section class="card mode-panel" data-mode-panel="dt">
+
+        <div class="dt-dock-head dt-dock-head-split">
+
+          <h3 data-en="Drive Test Routes">路測路線</h3>
+
+          <div class="dt-route-filters">
+
+            <label class="dt-filter-label"><span data-en="Direction">方向</span>
+
+              <select id="routeDirectionFilter">
+
+                <option value="all" data-en="All">全部</option>
+
+                <option value="南下" data-en="Southbound" selected>南下</option>
+
+                <option value="北上" data-en="Northbound">北上</option>
+
+              </select>
+
+            </label>
+
+            <div class="scope-tabs scope-tabs-compact">
+
+              <button type="button" class="scope-tab" data-scope="full" data-en="Full">全線</button>
+
+              <button type="button" class="scope-tab active" data-scope="segment" data-en="Segment">分段</button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="dt-controls">
+
+          <div class="ctrl-row">
+
+            <span class="ctrl-label" data-en="Color by">上色依據</span>
+
+            <div class="scope-tabs scope-tabs-compact" id="metricTabs">
+
+              <button type="button" class="scope-tab active" data-metric="4G">4G</button>
+
+              <button type="button" class="scope-tab" data-metric="5G">5G</button>
+
+            </div>
+
+          </div>
+
+          <div class="ctrl-row">
+
+            <span class="ctrl-label"><span data-en="Weak threshold">弱訊門檻</span> <strong id="threshVal">-105</strong> dBm</span>
+
+            <input type="range" id="weakThreshold" min="-120" max="-90" step="1" value="-105">
+
+          </div>
+
+          <button type="button" id="exportBtn" class="btn-secondary" data-en="Export Report (CSV)">匯出報告（CSV）</button>
+
+        </div>
+
+        <div id="routeList" class="route-list"></div>
+
+      </section>
+
+
+
+      <!-- MDT mode -->
+
+      <section class="card mode-panel" data-mode-panel="mdt" hidden>
+
+        <h2 data-en="MDT Filter">MDT 篩選</h2>
+
+        <label><span data-en="Operator">業者</span>
+
+          <select id="mdtOperator">
+
+            <option value="TWM" data-en="TWM (Home)">TWM (本網)</option>
+
+            <option value="CHT" data-en="CHT (Competitor)">CHT (競業)</option>
+
+            <option value="FET" data-en="FET (Competitor)">FET (競業)</option>
+
+          </select>
+
+        </label>
+
+        <label><span data-en="Band / Attribute">頻段 / 屬性</span>
+
+          <select id="mdtLayer"></select>
+
+        </label>
+
+        <label><span data-en="HSR Station A">高鐵站 A</span>
+
+          <select id="mdtStationA"></select>
+
+        </label>
+
+        <label><span data-en="HSR Station B">高鐵站 B</span>
+
+          <select id="mdtStationB"></select>
+
+        </label>
+
+        <label><span data-en="Data Date">資料日期</span>
+
+          <select id="mdtDate"></select>
+
+        </label>
+
+        <label><span data-en="Compare Operator (Cross-operator)">比較業者（異業者比較）</span>
+
+          <select id="mdtCompareOp">
+
+            <option value="" data-en="None">無</option>
+
+            <option value="CHT" data-en="CHT (Competitor)">CHT (競業)</option>
+
+            <option value="FET" data-en="FET (Competitor)">FET (競業)</option>
+
+          </select>
+
+        </label>
+
+        <button id="mdtLoadBtn" type="button" data-en="Load MDT">載入 MDT</button>
+
+        <label class="checkbox-row">
+
+          <input type="checkbox" id="overlayDt"> <span data-en="Overlay Drive Test DT">疊加路測 DT</span>
+
+        </label>
+
+        <button type="button" id="mdtExportBtn" class="btn-secondary" data-en="Export Report (CSV)">匯出報告（CSV）</button>
+
+      </section>
+
+
+
+      <section class="card" id="resultCard" hidden>
+
+        <h2 id="resultTitle" data-en="Result">查詢結果</h2>
+
+        <div id="kpiGrid" class="kpi-grid"></div>
+
+        <div id="mdtInfo" class="mdt-info" hidden></div>
+
+      </section>
+
+    </aside>
+
+
+
+    <div class="main-column">
+
+      <div class="map-wrap">
+
+        <div class="map-legend" aria-label="RSRP 訊號強度">
+
+          <div class="map-legend-title" data-en="RSRP Signal Strength">RSRP 訊號強度</div>
+
+          <ul class="legend legend-inline">
+
+            <li><span class="dot excellent"></span> <span data-en="Excellent ≥ -85 dBm">優良 ≥ -85 dBm</span></li>
+
+            <li><span class="dot good"></span> <span data-en="Good -95 ~ -85">良好 -95 ~ -85</span></li>
+
+            <li><span class="dot normal"></span> <span data-en="Fair -105 ~ -95">普通 -105 ~ -95</span></li>
+
+            <li><span class="dot weak"></span> <span data-en="Weak -115 ~ -105">較弱 -115 ~ -105</span></li>
+
+            <li><span class="dot poor"></span> <span data-en="Poor &lt; -115">微弱 &lt; -115</span></li>
+
+          </ul>
+
+        </div>
+
+        <div id="map"></div>
+
+        <div id="cmpLegend" class="cmp-legend-box" hidden></div>
+
+        <div id="pointPopup" class="point-popup" hidden></div>
+
+      </div>
+
+
+
+      <aside class="dt-dock mode-panel" data-mode-panel="dt">
+
+        <section class="dt-dock-panel dt-dock-weak">
+
+          <div class="dt-dock-head">
+
+            <h3 data-en="Weak Zones">弱訊區段</h3>
+
+            <span class="hint weak-hint-click" data-en="Click an item to zoom to that zone">點選項目，地圖將貼合該區段</span>
+
+          </div>
+
+          <div id="weakList" class="weak-list-strip"></div>
+
+          <div id="csScript" class="cs-script cs-script-strip"></div>
+
+        </section>
+
+        <section class="dt-dock-panel dt-dock-result">
+
+          <div class="dt-dock-head">
+
+            <h3 id="dtResultTitle" data-en="Segment Result">站間切分結果</h3>
+
+            <span class="hint" data-en="Select a route to show RF metrics">查詢或點選路線後顯示 RF 指標</span>
+
+          </div>
+
+          <div id="dtKpiGrid" class="kpi-grid dt-kpi-grid"></div>
+
+        </section>
+
+      </aside>
+
+      <aside class="mdt-dock" id="mdtDock" hidden></aside>
+
+    </div>
+
+  </main>
+
+
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <script src="app.js?v=20260605b"></script>
+
+</body>
+
+</html>
+
+

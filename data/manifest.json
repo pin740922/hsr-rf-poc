@@ -1,0 +1,3609 @@
+{
+  "version": 3,
+  "generated_from": "C:\\Users\\tsuwang\\Desktop\\我的資料夾\\PIN_Cursor\\test1\\TWM_DT_MDT_HSR_25m\\DT",
+  "mdt_source": "C:\\Users\\tsuwang\\Desktop\\我的資料夾\\PIN_Cursor\\test1\\TWM_DT_MDT_HSR_25m\\MDT",
+  "mdt_operators": [
+    "TWM",
+    "CHT",
+    "FET"
+  ],
+  "stations": [
+    {
+      "id": "nangang",
+      "name": "南港",
+      "lat": 25.05306,
+      "lon": 121.60672,
+      "order_north": 1
+    },
+    {
+      "id": "taipei",
+      "name": "台北",
+      "lat": 25.04792,
+      "lon": 121.51708,
+      "order_north": 2
+    },
+    {
+      "id": "banqiao",
+      "name": "板橋",
+      "lat": 25.01442,
+      "lon": 121.46463,
+      "order_north": 3
+    },
+    {
+      "id": "taoyuan",
+      "name": "桃園",
+      "lat": 25.01309,
+      "lon": 121.21503,
+      "order_north": 4
+    },
+    {
+      "id": "hsinchu",
+      "name": "新竹",
+      "lat": 24.80806,
+      "lon": 120.96472,
+      "order_north": 5
+    },
+    {
+      "id": "miaoli",
+      "name": "苗栗",
+      "lat": 24.60528,
+      "lon": 120.82528,
+      "order_north": 6
+    },
+    {
+      "id": "taichung",
+      "name": "台中",
+      "lat": 24.11222,
+      "lon": 120.61528,
+      "order_north": 7
+    },
+    {
+      "id": "changhua",
+      "name": "彰化",
+      "lat": 23.87417,
+      "lon": 120.57444,
+      "order_north": 8
+    },
+    {
+      "id": "yunlin",
+      "name": "雲林",
+      "lat": 23.73611,
+      "lon": 120.41639,
+      "order_north": 9
+    },
+    {
+      "id": "chiayi",
+      "name": "嘉義",
+      "lat": 23.45972,
+      "lon": 120.32306,
+      "order_north": 10
+    },
+    {
+      "id": "tainan",
+      "name": "台南",
+      "lat": 22.92528,
+      "lon": 120.28611,
+      "order_north": 11
+    },
+    {
+      "id": "zuoying",
+      "name": "左營",
+      "lat": 22.68722,
+      "lon": 120.30778,
+      "order_north": 12
+    }
+  ],
+  "route_lookup": {
+    "南港|左營|南下": "full-nangang-zuoying-s",
+    "左營|南港|北上": "full-zuoying-nangang-n"
+  },
+  "interval_lookup": {
+    "南港|台北|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": -1.0,
+      "dist_to": 41.0,
+      "start_station": "南港",
+      "end_station": "台北",
+      "direction": "南下",
+      "label": "南港→台北",
+      "scope": "interval"
+    },
+    "南港|板橋|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": -1.0,
+      "dist_to": 94.0,
+      "start_station": "南港",
+      "end_station": "板橋",
+      "direction": "南下",
+      "label": "南港→板橋",
+      "scope": "interval"
+    },
+    "南港|桃園|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": -1.0,
+      "dist_to": 196.0,
+      "start_station": "南港",
+      "end_station": "桃園",
+      "direction": "南下",
+      "label": "南港→桃園",
+      "scope": "interval"
+    },
+    "南港|新竹|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": -1.0,
+      "dist_to": 466.0,
+      "start_station": "南港",
+      "end_station": "新竹",
+      "direction": "南下",
+      "label": "南港→新竹",
+      "scope": "interval"
+    },
+    "南港|苗栗|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": -1.0,
+      "dist_to": 721.0,
+      "start_station": "南港",
+      "end_station": "苗栗",
+      "direction": "南下",
+      "label": "南港→苗栗",
+      "scope": "interval"
+    },
+    "南港|台中|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": -1.0,
+      "dist_to": 1247.0,
+      "start_station": "南港",
+      "end_station": "台中",
+      "direction": "南下",
+      "label": "南港→台中",
+      "scope": "interval"
+    },
+    "南港|彰化|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": -1.0,
+      "dist_to": 1477.0,
+      "start_station": "南港",
+      "end_station": "彰化",
+      "direction": "南下",
+      "label": "南港→彰化",
+      "scope": "interval"
+    },
+    "南港|雲林|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": -1.0,
+      "dist_to": 1665.0,
+      "start_station": "南港",
+      "end_station": "雲林",
+      "direction": "南下",
+      "label": "南港→雲林",
+      "scope": "interval"
+    },
+    "南港|嘉義|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": -1.0,
+      "dist_to": 1950.0,
+      "start_station": "南港",
+      "end_station": "嘉義",
+      "direction": "南下",
+      "label": "南港→嘉義",
+      "scope": "interval"
+    },
+    "南港|台南|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": -1.0,
+      "dist_to": 2443.0,
+      "start_station": "南港",
+      "end_station": "台南",
+      "direction": "南下",
+      "label": "南港→台南",
+      "scope": "interval"
+    },
+    "南港|左營|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": -1.0,
+      "dist_to": 2646.0,
+      "start_station": "南港",
+      "end_station": "左營",
+      "direction": "南下",
+      "label": "南港→左營",
+      "scope": "interval"
+    },
+    "台北|板橋|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 41.0,
+      "dist_to": 94.0,
+      "start_station": "台北",
+      "end_station": "板橋",
+      "direction": "南下",
+      "label": "台北→板橋",
+      "scope": "interval"
+    },
+    "台北|桃園|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 41.0,
+      "dist_to": 196.0,
+      "start_station": "台北",
+      "end_station": "桃園",
+      "direction": "南下",
+      "label": "台北→桃園",
+      "scope": "interval"
+    },
+    "台北|新竹|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 41.0,
+      "dist_to": 466.0,
+      "start_station": "台北",
+      "end_station": "新竹",
+      "direction": "南下",
+      "label": "台北→新竹",
+      "scope": "interval"
+    },
+    "台北|苗栗|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 41.0,
+      "dist_to": 721.0,
+      "start_station": "台北",
+      "end_station": "苗栗",
+      "direction": "南下",
+      "label": "台北→苗栗",
+      "scope": "interval"
+    },
+    "台北|台中|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 41.0,
+      "dist_to": 1247.0,
+      "start_station": "台北",
+      "end_station": "台中",
+      "direction": "南下",
+      "label": "台北→台中",
+      "scope": "interval"
+    },
+    "台北|彰化|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 41.0,
+      "dist_to": 1477.0,
+      "start_station": "台北",
+      "end_station": "彰化",
+      "direction": "南下",
+      "label": "台北→彰化",
+      "scope": "interval"
+    },
+    "台北|雲林|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 41.0,
+      "dist_to": 1665.0,
+      "start_station": "台北",
+      "end_station": "雲林",
+      "direction": "南下",
+      "label": "台北→雲林",
+      "scope": "interval"
+    },
+    "台北|嘉義|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 41.0,
+      "dist_to": 1950.0,
+      "start_station": "台北",
+      "end_station": "嘉義",
+      "direction": "南下",
+      "label": "台北→嘉義",
+      "scope": "interval"
+    },
+    "台北|台南|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 41.0,
+      "dist_to": 2443.0,
+      "start_station": "台北",
+      "end_station": "台南",
+      "direction": "南下",
+      "label": "台北→台南",
+      "scope": "interval"
+    },
+    "台北|左營|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 41.0,
+      "dist_to": 2646.0,
+      "start_station": "台北",
+      "end_station": "左營",
+      "direction": "南下",
+      "label": "台北→左營",
+      "scope": "interval"
+    },
+    "板橋|桃園|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 94.0,
+      "dist_to": 196.0,
+      "start_station": "板橋",
+      "end_station": "桃園",
+      "direction": "南下",
+      "label": "板橋→桃園",
+      "scope": "interval"
+    },
+    "板橋|新竹|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 94.0,
+      "dist_to": 466.0,
+      "start_station": "板橋",
+      "end_station": "新竹",
+      "direction": "南下",
+      "label": "板橋→新竹",
+      "scope": "interval"
+    },
+    "板橋|苗栗|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 94.0,
+      "dist_to": 721.0,
+      "start_station": "板橋",
+      "end_station": "苗栗",
+      "direction": "南下",
+      "label": "板橋→苗栗",
+      "scope": "interval"
+    },
+    "板橋|台中|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 94.0,
+      "dist_to": 1247.0,
+      "start_station": "板橋",
+      "end_station": "台中",
+      "direction": "南下",
+      "label": "板橋→台中",
+      "scope": "interval"
+    },
+    "板橋|彰化|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 94.0,
+      "dist_to": 1477.0,
+      "start_station": "板橋",
+      "end_station": "彰化",
+      "direction": "南下",
+      "label": "板橋→彰化",
+      "scope": "interval"
+    },
+    "板橋|雲林|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 94.0,
+      "dist_to": 1665.0,
+      "start_station": "板橋",
+      "end_station": "雲林",
+      "direction": "南下",
+      "label": "板橋→雲林",
+      "scope": "interval"
+    },
+    "板橋|嘉義|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 94.0,
+      "dist_to": 1950.0,
+      "start_station": "板橋",
+      "end_station": "嘉義",
+      "direction": "南下",
+      "label": "板橋→嘉義",
+      "scope": "interval"
+    },
+    "板橋|台南|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 94.0,
+      "dist_to": 2443.0,
+      "start_station": "板橋",
+      "end_station": "台南",
+      "direction": "南下",
+      "label": "板橋→台南",
+      "scope": "interval"
+    },
+    "板橋|左營|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 94.0,
+      "dist_to": 2646.0,
+      "start_station": "板橋",
+      "end_station": "左營",
+      "direction": "南下",
+      "label": "板橋→左營",
+      "scope": "interval"
+    },
+    "桃園|新竹|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 196.0,
+      "dist_to": 466.0,
+      "start_station": "桃園",
+      "end_station": "新竹",
+      "direction": "南下",
+      "label": "桃園→新竹",
+      "scope": "interval"
+    },
+    "桃園|苗栗|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 196.0,
+      "dist_to": 721.0,
+      "start_station": "桃園",
+      "end_station": "苗栗",
+      "direction": "南下",
+      "label": "桃園→苗栗",
+      "scope": "interval"
+    },
+    "桃園|台中|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 196.0,
+      "dist_to": 1247.0,
+      "start_station": "桃園",
+      "end_station": "台中",
+      "direction": "南下",
+      "label": "桃園→台中",
+      "scope": "interval"
+    },
+    "桃園|彰化|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 196.0,
+      "dist_to": 1477.0,
+      "start_station": "桃園",
+      "end_station": "彰化",
+      "direction": "南下",
+      "label": "桃園→彰化",
+      "scope": "interval"
+    },
+    "桃園|雲林|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 196.0,
+      "dist_to": 1665.0,
+      "start_station": "桃園",
+      "end_station": "雲林",
+      "direction": "南下",
+      "label": "桃園→雲林",
+      "scope": "interval"
+    },
+    "桃園|嘉義|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 196.0,
+      "dist_to": 1950.0,
+      "start_station": "桃園",
+      "end_station": "嘉義",
+      "direction": "南下",
+      "label": "桃園→嘉義",
+      "scope": "interval"
+    },
+    "桃園|台南|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 196.0,
+      "dist_to": 2443.0,
+      "start_station": "桃園",
+      "end_station": "台南",
+      "direction": "南下",
+      "label": "桃園→台南",
+      "scope": "interval"
+    },
+    "桃園|左營|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 196.0,
+      "dist_to": 2646.0,
+      "start_station": "桃園",
+      "end_station": "左營",
+      "direction": "南下",
+      "label": "桃園→左營",
+      "scope": "interval"
+    },
+    "新竹|苗栗|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 466.0,
+      "dist_to": 721.0,
+      "start_station": "新竹",
+      "end_station": "苗栗",
+      "direction": "南下",
+      "label": "新竹→苗栗",
+      "scope": "interval"
+    },
+    "新竹|台中|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 466.0,
+      "dist_to": 1247.0,
+      "start_station": "新竹",
+      "end_station": "台中",
+      "direction": "南下",
+      "label": "新竹→台中",
+      "scope": "interval"
+    },
+    "新竹|彰化|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 466.0,
+      "dist_to": 1477.0,
+      "start_station": "新竹",
+      "end_station": "彰化",
+      "direction": "南下",
+      "label": "新竹→彰化",
+      "scope": "interval"
+    },
+    "新竹|雲林|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 466.0,
+      "dist_to": 1665.0,
+      "start_station": "新竹",
+      "end_station": "雲林",
+      "direction": "南下",
+      "label": "新竹→雲林",
+      "scope": "interval"
+    },
+    "新竹|嘉義|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 466.0,
+      "dist_to": 1950.0,
+      "start_station": "新竹",
+      "end_station": "嘉義",
+      "direction": "南下",
+      "label": "新竹→嘉義",
+      "scope": "interval"
+    },
+    "新竹|台南|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 466.0,
+      "dist_to": 2443.0,
+      "start_station": "新竹",
+      "end_station": "台南",
+      "direction": "南下",
+      "label": "新竹→台南",
+      "scope": "interval"
+    },
+    "新竹|左營|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 466.0,
+      "dist_to": 2646.0,
+      "start_station": "新竹",
+      "end_station": "左營",
+      "direction": "南下",
+      "label": "新竹→左營",
+      "scope": "interval"
+    },
+    "苗栗|台中|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 721.0,
+      "dist_to": 1247.0,
+      "start_station": "苗栗",
+      "end_station": "台中",
+      "direction": "南下",
+      "label": "苗栗→台中",
+      "scope": "interval"
+    },
+    "苗栗|彰化|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 721.0,
+      "dist_to": 1477.0,
+      "start_station": "苗栗",
+      "end_station": "彰化",
+      "direction": "南下",
+      "label": "苗栗→彰化",
+      "scope": "interval"
+    },
+    "苗栗|雲林|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 721.0,
+      "dist_to": 1665.0,
+      "start_station": "苗栗",
+      "end_station": "雲林",
+      "direction": "南下",
+      "label": "苗栗→雲林",
+      "scope": "interval"
+    },
+    "苗栗|嘉義|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 721.0,
+      "dist_to": 1950.0,
+      "start_station": "苗栗",
+      "end_station": "嘉義",
+      "direction": "南下",
+      "label": "苗栗→嘉義",
+      "scope": "interval"
+    },
+    "苗栗|台南|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 721.0,
+      "dist_to": 2443.0,
+      "start_station": "苗栗",
+      "end_station": "台南",
+      "direction": "南下",
+      "label": "苗栗→台南",
+      "scope": "interval"
+    },
+    "苗栗|左營|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 721.0,
+      "dist_to": 2646.0,
+      "start_station": "苗栗",
+      "end_station": "左營",
+      "direction": "南下",
+      "label": "苗栗→左營",
+      "scope": "interval"
+    },
+    "台中|彰化|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 1247.0,
+      "dist_to": 1477.0,
+      "start_station": "台中",
+      "end_station": "彰化",
+      "direction": "南下",
+      "label": "台中→彰化",
+      "scope": "interval"
+    },
+    "台中|雲林|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 1247.0,
+      "dist_to": 1665.0,
+      "start_station": "台中",
+      "end_station": "雲林",
+      "direction": "南下",
+      "label": "台中→雲林",
+      "scope": "interval"
+    },
+    "台中|嘉義|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 1247.0,
+      "dist_to": 1950.0,
+      "start_station": "台中",
+      "end_station": "嘉義",
+      "direction": "南下",
+      "label": "台中→嘉義",
+      "scope": "interval"
+    },
+    "台中|台南|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 1247.0,
+      "dist_to": 2443.0,
+      "start_station": "台中",
+      "end_station": "台南",
+      "direction": "南下",
+      "label": "台中→台南",
+      "scope": "interval"
+    },
+    "台中|左營|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 1247.0,
+      "dist_to": 2646.0,
+      "start_station": "台中",
+      "end_station": "左營",
+      "direction": "南下",
+      "label": "台中→左營",
+      "scope": "interval"
+    },
+    "彰化|雲林|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 1477.0,
+      "dist_to": 1665.0,
+      "start_station": "彰化",
+      "end_station": "雲林",
+      "direction": "南下",
+      "label": "彰化→雲林",
+      "scope": "interval"
+    },
+    "彰化|嘉義|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 1477.0,
+      "dist_to": 1950.0,
+      "start_station": "彰化",
+      "end_station": "嘉義",
+      "direction": "南下",
+      "label": "彰化→嘉義",
+      "scope": "interval"
+    },
+    "彰化|台南|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 1477.0,
+      "dist_to": 2443.0,
+      "start_station": "彰化",
+      "end_station": "台南",
+      "direction": "南下",
+      "label": "彰化→台南",
+      "scope": "interval"
+    },
+    "彰化|左營|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 1477.0,
+      "dist_to": 2646.0,
+      "start_station": "彰化",
+      "end_station": "左營",
+      "direction": "南下",
+      "label": "彰化→左營",
+      "scope": "interval"
+    },
+    "雲林|嘉義|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 1665.0,
+      "dist_to": 1950.0,
+      "start_station": "雲林",
+      "end_station": "嘉義",
+      "direction": "南下",
+      "label": "雲林→嘉義",
+      "scope": "interval"
+    },
+    "雲林|台南|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 1665.0,
+      "dist_to": 2443.0,
+      "start_station": "雲林",
+      "end_station": "台南",
+      "direction": "南下",
+      "label": "雲林→台南",
+      "scope": "interval"
+    },
+    "雲林|左營|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 1665.0,
+      "dist_to": 2646.0,
+      "start_station": "雲林",
+      "end_station": "左營",
+      "direction": "南下",
+      "label": "雲林→左營",
+      "scope": "interval"
+    },
+    "嘉義|台南|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 1950.0,
+      "dist_to": 2443.0,
+      "start_station": "嘉義",
+      "end_station": "台南",
+      "direction": "南下",
+      "label": "嘉義→台南",
+      "scope": "interval"
+    },
+    "嘉義|左營|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 1950.0,
+      "dist_to": 2646.0,
+      "start_station": "嘉義",
+      "end_station": "左營",
+      "direction": "南下",
+      "label": "嘉義→左營",
+      "scope": "interval"
+    },
+    "台南|左營|南下": {
+      "parent_id": "full-nangang-zuoying-s",
+      "parent_name": "南港→左營（全線）",
+      "dist_from": 2443.0,
+      "dist_to": 2646.0,
+      "start_station": "台南",
+      "end_station": "左營",
+      "direction": "南下",
+      "label": "台南→左營",
+      "scope": "interval"
+    },
+    "台北|南港|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": -0.0,
+      "dist_to": 41.0,
+      "start_station": "台北",
+      "end_station": "南港",
+      "direction": "北上",
+      "label": "台北→南港",
+      "scope": "interval"
+    },
+    "板橋|南港|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": -0.0,
+      "dist_to": 94.0,
+      "start_station": "板橋",
+      "end_station": "南港",
+      "direction": "北上",
+      "label": "板橋→南港",
+      "scope": "interval"
+    },
+    "板橋|台北|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 41.0,
+      "dist_to": 94.0,
+      "start_station": "板橋",
+      "end_station": "台北",
+      "direction": "北上",
+      "label": "板橋→台北",
+      "scope": "interval"
+    },
+    "桃園|南港|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": -0.0,
+      "dist_to": 196.0,
+      "start_station": "桃園",
+      "end_station": "南港",
+      "direction": "北上",
+      "label": "桃園→南港",
+      "scope": "interval"
+    },
+    "桃園|台北|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 41.0,
+      "dist_to": 196.0,
+      "start_station": "桃園",
+      "end_station": "台北",
+      "direction": "北上",
+      "label": "桃園→台北",
+      "scope": "interval"
+    },
+    "桃園|板橋|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 94.0,
+      "dist_to": 196.0,
+      "start_station": "桃園",
+      "end_station": "板橋",
+      "direction": "北上",
+      "label": "桃園→板橋",
+      "scope": "interval"
+    },
+    "新竹|南港|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": -0.0,
+      "dist_to": 466.0,
+      "start_station": "新竹",
+      "end_station": "南港",
+      "direction": "北上",
+      "label": "新竹→南港",
+      "scope": "interval"
+    },
+    "新竹|台北|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 41.0,
+      "dist_to": 466.0,
+      "start_station": "新竹",
+      "end_station": "台北",
+      "direction": "北上",
+      "label": "新竹→台北",
+      "scope": "interval"
+    },
+    "新竹|板橋|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 94.0,
+      "dist_to": 466.0,
+      "start_station": "新竹",
+      "end_station": "板橋",
+      "direction": "北上",
+      "label": "新竹→板橋",
+      "scope": "interval"
+    },
+    "新竹|桃園|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 196.0,
+      "dist_to": 466.0,
+      "start_station": "新竹",
+      "end_station": "桃園",
+      "direction": "北上",
+      "label": "新竹→桃園",
+      "scope": "interval"
+    },
+    "苗栗|南港|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": -0.0,
+      "dist_to": 721.0,
+      "start_station": "苗栗",
+      "end_station": "南港",
+      "direction": "北上",
+      "label": "苗栗→南港",
+      "scope": "interval"
+    },
+    "苗栗|台北|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 41.0,
+      "dist_to": 721.0,
+      "start_station": "苗栗",
+      "end_station": "台北",
+      "direction": "北上",
+      "label": "苗栗→台北",
+      "scope": "interval"
+    },
+    "苗栗|板橋|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 94.0,
+      "dist_to": 721.0,
+      "start_station": "苗栗",
+      "end_station": "板橋",
+      "direction": "北上",
+      "label": "苗栗→板橋",
+      "scope": "interval"
+    },
+    "苗栗|桃園|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 196.0,
+      "dist_to": 721.0,
+      "start_station": "苗栗",
+      "end_station": "桃園",
+      "direction": "北上",
+      "label": "苗栗→桃園",
+      "scope": "interval"
+    },
+    "苗栗|新竹|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 466.0,
+      "dist_to": 721.0,
+      "start_station": "苗栗",
+      "end_station": "新竹",
+      "direction": "北上",
+      "label": "苗栗→新竹",
+      "scope": "interval"
+    },
+    "台中|南港|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": -0.0,
+      "dist_to": 1247.0,
+      "start_station": "台中",
+      "end_station": "南港",
+      "direction": "北上",
+      "label": "台中→南港",
+      "scope": "interval"
+    },
+    "台中|台北|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 41.0,
+      "dist_to": 1247.0,
+      "start_station": "台中",
+      "end_station": "台北",
+      "direction": "北上",
+      "label": "台中→台北",
+      "scope": "interval"
+    },
+    "台中|板橋|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 94.0,
+      "dist_to": 1247.0,
+      "start_station": "台中",
+      "end_station": "板橋",
+      "direction": "北上",
+      "label": "台中→板橋",
+      "scope": "interval"
+    },
+    "台中|桃園|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 196.0,
+      "dist_to": 1247.0,
+      "start_station": "台中",
+      "end_station": "桃園",
+      "direction": "北上",
+      "label": "台中→桃園",
+      "scope": "interval"
+    },
+    "台中|新竹|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 466.0,
+      "dist_to": 1247.0,
+      "start_station": "台中",
+      "end_station": "新竹",
+      "direction": "北上",
+      "label": "台中→新竹",
+      "scope": "interval"
+    },
+    "台中|苗栗|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 721.0,
+      "dist_to": 1247.0,
+      "start_station": "台中",
+      "end_station": "苗栗",
+      "direction": "北上",
+      "label": "台中→苗栗",
+      "scope": "interval"
+    },
+    "彰化|南港|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": -0.0,
+      "dist_to": 1477.0,
+      "start_station": "彰化",
+      "end_station": "南港",
+      "direction": "北上",
+      "label": "彰化→南港",
+      "scope": "interval"
+    },
+    "彰化|台北|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 41.0,
+      "dist_to": 1477.0,
+      "start_station": "彰化",
+      "end_station": "台北",
+      "direction": "北上",
+      "label": "彰化→台北",
+      "scope": "interval"
+    },
+    "彰化|板橋|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 94.0,
+      "dist_to": 1477.0,
+      "start_station": "彰化",
+      "end_station": "板橋",
+      "direction": "北上",
+      "label": "彰化→板橋",
+      "scope": "interval"
+    },
+    "彰化|桃園|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 196.0,
+      "dist_to": 1477.0,
+      "start_station": "彰化",
+      "end_station": "桃園",
+      "direction": "北上",
+      "label": "彰化→桃園",
+      "scope": "interval"
+    },
+    "彰化|新竹|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 466.0,
+      "dist_to": 1477.0,
+      "start_station": "彰化",
+      "end_station": "新竹",
+      "direction": "北上",
+      "label": "彰化→新竹",
+      "scope": "interval"
+    },
+    "彰化|苗栗|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 721.0,
+      "dist_to": 1477.0,
+      "start_station": "彰化",
+      "end_station": "苗栗",
+      "direction": "北上",
+      "label": "彰化→苗栗",
+      "scope": "interval"
+    },
+    "彰化|台中|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 1247.0,
+      "dist_to": 1477.0,
+      "start_station": "彰化",
+      "end_station": "台中",
+      "direction": "北上",
+      "label": "彰化→台中",
+      "scope": "interval"
+    },
+    "雲林|南港|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": -0.0,
+      "dist_to": 1665.0,
+      "start_station": "雲林",
+      "end_station": "南港",
+      "direction": "北上",
+      "label": "雲林→南港",
+      "scope": "interval"
+    },
+    "雲林|台北|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 41.0,
+      "dist_to": 1665.0,
+      "start_station": "雲林",
+      "end_station": "台北",
+      "direction": "北上",
+      "label": "雲林→台北",
+      "scope": "interval"
+    },
+    "雲林|板橋|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 94.0,
+      "dist_to": 1665.0,
+      "start_station": "雲林",
+      "end_station": "板橋",
+      "direction": "北上",
+      "label": "雲林→板橋",
+      "scope": "interval"
+    },
+    "雲林|桃園|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 196.0,
+      "dist_to": 1665.0,
+      "start_station": "雲林",
+      "end_station": "桃園",
+      "direction": "北上",
+      "label": "雲林→桃園",
+      "scope": "interval"
+    },
+    "雲林|新竹|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 466.0,
+      "dist_to": 1665.0,
+      "start_station": "雲林",
+      "end_station": "新竹",
+      "direction": "北上",
+      "label": "雲林→新竹",
+      "scope": "interval"
+    },
+    "雲林|苗栗|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 721.0,
+      "dist_to": 1665.0,
+      "start_station": "雲林",
+      "end_station": "苗栗",
+      "direction": "北上",
+      "label": "雲林→苗栗",
+      "scope": "interval"
+    },
+    "雲林|台中|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 1247.0,
+      "dist_to": 1665.0,
+      "start_station": "雲林",
+      "end_station": "台中",
+      "direction": "北上",
+      "label": "雲林→台中",
+      "scope": "interval"
+    },
+    "雲林|彰化|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 1477.0,
+      "dist_to": 1665.0,
+      "start_station": "雲林",
+      "end_station": "彰化",
+      "direction": "北上",
+      "label": "雲林→彰化",
+      "scope": "interval"
+    },
+    "嘉義|南港|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": -0.0,
+      "dist_to": 1950.0,
+      "start_station": "嘉義",
+      "end_station": "南港",
+      "direction": "北上",
+      "label": "嘉義→南港",
+      "scope": "interval"
+    },
+    "嘉義|台北|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 41.0,
+      "dist_to": 1950.0,
+      "start_station": "嘉義",
+      "end_station": "台北",
+      "direction": "北上",
+      "label": "嘉義→台北",
+      "scope": "interval"
+    },
+    "嘉義|板橋|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 94.0,
+      "dist_to": 1950.0,
+      "start_station": "嘉義",
+      "end_station": "板橋",
+      "direction": "北上",
+      "label": "嘉義→板橋",
+      "scope": "interval"
+    },
+    "嘉義|桃園|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 196.0,
+      "dist_to": 1950.0,
+      "start_station": "嘉義",
+      "end_station": "桃園",
+      "direction": "北上",
+      "label": "嘉義→桃園",
+      "scope": "interval"
+    },
+    "嘉義|新竹|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 466.0,
+      "dist_to": 1950.0,
+      "start_station": "嘉義",
+      "end_station": "新竹",
+      "direction": "北上",
+      "label": "嘉義→新竹",
+      "scope": "interval"
+    },
+    "嘉義|苗栗|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 721.0,
+      "dist_to": 1950.0,
+      "start_station": "嘉義",
+      "end_station": "苗栗",
+      "direction": "北上",
+      "label": "嘉義→苗栗",
+      "scope": "interval"
+    },
+    "嘉義|台中|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 1247.0,
+      "dist_to": 1950.0,
+      "start_station": "嘉義",
+      "end_station": "台中",
+      "direction": "北上",
+      "label": "嘉義→台中",
+      "scope": "interval"
+    },
+    "嘉義|彰化|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 1477.0,
+      "dist_to": 1950.0,
+      "start_station": "嘉義",
+      "end_station": "彰化",
+      "direction": "北上",
+      "label": "嘉義→彰化",
+      "scope": "interval"
+    },
+    "嘉義|雲林|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 1665.0,
+      "dist_to": 1950.0,
+      "start_station": "嘉義",
+      "end_station": "雲林",
+      "direction": "北上",
+      "label": "嘉義→雲林",
+      "scope": "interval"
+    },
+    "台南|南港|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": -0.0,
+      "dist_to": 2443.0,
+      "start_station": "台南",
+      "end_station": "南港",
+      "direction": "北上",
+      "label": "台南→南港",
+      "scope": "interval"
+    },
+    "台南|台北|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 41.0,
+      "dist_to": 2443.0,
+      "start_station": "台南",
+      "end_station": "台北",
+      "direction": "北上",
+      "label": "台南→台北",
+      "scope": "interval"
+    },
+    "台南|板橋|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 94.0,
+      "dist_to": 2443.0,
+      "start_station": "台南",
+      "end_station": "板橋",
+      "direction": "北上",
+      "label": "台南→板橋",
+      "scope": "interval"
+    },
+    "台南|桃園|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 196.0,
+      "dist_to": 2443.0,
+      "start_station": "台南",
+      "end_station": "桃園",
+      "direction": "北上",
+      "label": "台南→桃園",
+      "scope": "interval"
+    },
+    "台南|新竹|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 466.0,
+      "dist_to": 2443.0,
+      "start_station": "台南",
+      "end_station": "新竹",
+      "direction": "北上",
+      "label": "台南→新竹",
+      "scope": "interval"
+    },
+    "台南|苗栗|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 721.0,
+      "dist_to": 2443.0,
+      "start_station": "台南",
+      "end_station": "苗栗",
+      "direction": "北上",
+      "label": "台南→苗栗",
+      "scope": "interval"
+    },
+    "台南|台中|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 1247.0,
+      "dist_to": 2443.0,
+      "start_station": "台南",
+      "end_station": "台中",
+      "direction": "北上",
+      "label": "台南→台中",
+      "scope": "interval"
+    },
+    "台南|彰化|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 1477.0,
+      "dist_to": 2443.0,
+      "start_station": "台南",
+      "end_station": "彰化",
+      "direction": "北上",
+      "label": "台南→彰化",
+      "scope": "interval"
+    },
+    "台南|雲林|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 1665.0,
+      "dist_to": 2443.0,
+      "start_station": "台南",
+      "end_station": "雲林",
+      "direction": "北上",
+      "label": "台南→雲林",
+      "scope": "interval"
+    },
+    "台南|嘉義|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 1950.0,
+      "dist_to": 2443.0,
+      "start_station": "台南",
+      "end_station": "嘉義",
+      "direction": "北上",
+      "label": "台南→嘉義",
+      "scope": "interval"
+    },
+    "左營|南港|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": -0.0,
+      "dist_to": 2646.0,
+      "start_station": "左營",
+      "end_station": "南港",
+      "direction": "北上",
+      "label": "左營→南港",
+      "scope": "interval"
+    },
+    "左營|台北|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 41.0,
+      "dist_to": 2646.0,
+      "start_station": "左營",
+      "end_station": "台北",
+      "direction": "北上",
+      "label": "左營→台北",
+      "scope": "interval"
+    },
+    "左營|板橋|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 94.0,
+      "dist_to": 2646.0,
+      "start_station": "左營",
+      "end_station": "板橋",
+      "direction": "北上",
+      "label": "左營→板橋",
+      "scope": "interval"
+    },
+    "左營|桃園|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 196.0,
+      "dist_to": 2646.0,
+      "start_station": "左營",
+      "end_station": "桃園",
+      "direction": "北上",
+      "label": "左營→桃園",
+      "scope": "interval"
+    },
+    "左營|新竹|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 466.0,
+      "dist_to": 2646.0,
+      "start_station": "左營",
+      "end_station": "新竹",
+      "direction": "北上",
+      "label": "左營→新竹",
+      "scope": "interval"
+    },
+    "左營|苗栗|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 721.0,
+      "dist_to": 2646.0,
+      "start_station": "左營",
+      "end_station": "苗栗",
+      "direction": "北上",
+      "label": "左營→苗栗",
+      "scope": "interval"
+    },
+    "左營|台中|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 1247.0,
+      "dist_to": 2646.0,
+      "start_station": "左營",
+      "end_station": "台中",
+      "direction": "北上",
+      "label": "左營→台中",
+      "scope": "interval"
+    },
+    "左營|彰化|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 1477.0,
+      "dist_to": 2646.0,
+      "start_station": "左營",
+      "end_station": "彰化",
+      "direction": "北上",
+      "label": "左營→彰化",
+      "scope": "interval"
+    },
+    "左營|雲林|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 1665.0,
+      "dist_to": 2646.0,
+      "start_station": "左營",
+      "end_station": "雲林",
+      "direction": "北上",
+      "label": "左營→雲林",
+      "scope": "interval"
+    },
+    "左營|嘉義|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 1950.0,
+      "dist_to": 2646.0,
+      "start_station": "左營",
+      "end_station": "嘉義",
+      "direction": "北上",
+      "label": "左營→嘉義",
+      "scope": "interval"
+    },
+    "左營|台南|北上": {
+      "parent_id": "full-zuoying-nangang-n",
+      "parent_name": "左營→南港（全線）",
+      "dist_from": 2443.0,
+      "dist_to": 2646.0,
+      "start_station": "左營",
+      "end_station": "台南",
+      "direction": "北上",
+      "label": "左營→台南",
+      "scope": "interval"
+    }
+  },
+  "mdt_segments": [
+    {
+      "id": "N1",
+      "name": "北段",
+      "desc": "南港–板橋",
+      "folder": "N1"
+    },
+    {
+      "id": "N2",
+      "name": "北中段",
+      "desc": "台北–新竹",
+      "folder": "N2"
+    },
+    {
+      "id": "C",
+      "name": "中段",
+      "desc": "苗栗–雲林",
+      "folder": "C"
+    },
+    {
+      "id": "S",
+      "name": "南段",
+      "desc": "嘉義–左營",
+      "folder": "S"
+    }
+  ],
+  "mdt_station_segments": [
+    {
+      "id": "南港|台北",
+      "start_station": "南港",
+      "end_station": "台北",
+      "label": "南港→台北"
+    },
+    {
+      "id": "台北|板橋",
+      "start_station": "台北",
+      "end_station": "板橋",
+      "label": "台北→板橋"
+    },
+    {
+      "id": "板橋|桃園",
+      "start_station": "板橋",
+      "end_station": "桃園",
+      "label": "板橋→桃園"
+    },
+    {
+      "id": "桃園|新竹",
+      "start_station": "桃園",
+      "end_station": "新竹",
+      "label": "桃園→新竹"
+    },
+    {
+      "id": "新竹|苗栗",
+      "start_station": "新竹",
+      "end_station": "苗栗",
+      "label": "新竹→苗栗"
+    },
+    {
+      "id": "苗栗|台中",
+      "start_station": "苗栗",
+      "end_station": "台中",
+      "label": "苗栗→台中"
+    },
+    {
+      "id": "台中|彰化",
+      "start_station": "台中",
+      "end_station": "彰化",
+      "label": "台中→彰化"
+    },
+    {
+      "id": "彰化|雲林",
+      "start_station": "彰化",
+      "end_station": "雲林",
+      "label": "彰化→雲林"
+    },
+    {
+      "id": "雲林|嘉義",
+      "start_station": "雲林",
+      "end_station": "嘉義",
+      "label": "雲林→嘉義"
+    },
+    {
+      "id": "嘉義|台南",
+      "start_station": "嘉義",
+      "end_station": "台南",
+      "label": "嘉義→台南"
+    },
+    {
+      "id": "台南|左營",
+      "start_station": "台南",
+      "end_station": "左營",
+      "label": "台南→左營"
+    }
+  ],
+  "mdt_region_span": {
+    "N1": {
+      "start": "南港",
+      "end": "板橋"
+    },
+    "N2": {
+      "start": "板橋",
+      "end": "新竹"
+    },
+    "C": {
+      "start": "苗栗",
+      "end": "雲林"
+    },
+    "S": {
+      "start": "嘉義",
+      "end": "左營"
+    }
+  },
+  "mdt_region_chain_idx": {
+    "N1": [
+      0,
+      2
+    ],
+    "N2": [
+      2,
+      4
+    ],
+    "C": [
+      5,
+      8
+    ],
+    "S": [
+      9,
+      11
+    ]
+  },
+  "mdt_layers": {
+    "L7": {
+      "tech": "4G",
+      "label": "4G L7"
+    },
+    "L9": {
+      "tech": "4G",
+      "label": "4G L9"
+    },
+    "L18": {
+      "tech": "4G",
+      "label": "4G L18"
+    },
+    "L21": {
+      "tech": "4G",
+      "label": "4G L21"
+    },
+    "L26": {
+      "tech": "4G",
+      "label": "4G L26"
+    }
+  },
+  "mdt_dates": [
+    "20260112",
+    "20260316"
+  ],
+  "hsr_corridor_source": "C:\\Users\\tsuwang\\Desktop\\我的資料夾\\PIN_Cursor\\test1\\HSR_Polygon\\高鐵.kml",
+  "dt_routes": [
+    {
+      "id": "full-nangang-zuoying-s",
+      "name": "南港→左營（全線）",
+      "direction": "南下",
+      "scope": "full",
+      "test_date": "2026-03-18",
+      "stats": {
+        "mean": -85.34,
+        "minimum": -130.8,
+        "maximum": -55.5,
+        "count": 8459,
+        "weak_pct": 1.9
+      },
+      "weak_pct": 1.9
+    },
+    {
+      "id": "full-zuoying-nangang-n",
+      "name": "左營→南港（全線）",
+      "direction": "北上",
+      "scope": "full",
+      "test_date": "2026-03-18",
+      "stats": {
+        "mean": -85.09,
+        "minimum": -127.45,
+        "maximum": -56.6,
+        "count": 9001,
+        "weak_pct": 2.1
+      },
+      "weak_pct": 2.1
+    }
+  ],
+  "mdt_datasets": [
+    {
+      "id": "mdt-cht-N1-20260112",
+      "segment_id": "N1",
+      "segment_name": "北段",
+      "operator": "CHT",
+      "layer": "ifMDT",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -85.32,
+        "minimum": -120.51,
+        "maximum": -56.37,
+        "count": 2119,
+        "weak_pct": 1.0
+      },
+      "weak_pct": 1.0,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -85.32,
+          "minimum": -120.51,
+          "maximum": -56.37,
+          "count": 2119,
+          "weak_pct": 1.0
+        },
+        "rsrp_4g_max": {
+          "mean": -60.05,
+          "minimum": -111.0,
+          "maximum": -43.0,
+          "count": 2119,
+          "weak_pct": 0.2
+        }
+      }
+    },
+    {
+      "id": "mdt-fet-N1-20260112",
+      "segment_id": "N1",
+      "segment_name": "北段",
+      "operator": "FET",
+      "layer": "ifMDT",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -86.03,
+        "minimum": -124.0,
+        "maximum": -63.33,
+        "count": 2123,
+        "weak_pct": 2.5
+      },
+      "weak_pct": 2.5,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -86.03,
+          "minimum": -124.0,
+          "maximum": -63.33,
+          "count": 2123,
+          "weak_pct": 2.5
+        },
+        "rsrp_4g_max": {
+          "mean": -58.6,
+          "minimum": -121.0,
+          "maximum": -43.0,
+          "count": 2123,
+          "weak_pct": 0.4
+        }
+      }
+    },
+    {
+      "id": "mdt-twm-N1-L7-20260112",
+      "segment_id": "N1",
+      "segment_name": "北段",
+      "operator": "TWM",
+      "layer": "L7",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -83.06,
+        "minimum": -130.74,
+        "maximum": -55.43,
+        "count": 2000,
+        "weak_pct": 0.7
+      },
+      "weak_pct": 0.7,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -83.06,
+          "minimum": -130.74,
+          "maximum": -55.43,
+          "count": 2000,
+          "weak_pct": 0.7
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 3730.0,
+          "maximum": 37378.0,
+          "count": 1931
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-N1-L9-20260112",
+      "segment_id": "N1",
+      "segment_name": "北段",
+      "operator": "TWM",
+      "layer": "L9",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -80.3,
+        "minimum": -127.94,
+        "maximum": -55.25,
+        "count": 1334,
+        "weak_pct": 1.4
+      },
+      "weak_pct": 1.4,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -80.3,
+          "minimum": -127.94,
+          "maximum": -55.25,
+          "count": 1334,
+          "weak_pct": 1.4
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 2646.0,
+          "maximum": 23122.0,
+          "count": 1138
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-N1-L18-20260112",
+      "segment_id": "N1",
+      "segment_name": "北段",
+      "operator": "TWM",
+      "layer": "L18",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -82.47,
+        "minimum": -121.4,
+        "maximum": -48.0,
+        "count": 2104,
+        "weak_pct": 0.3
+      },
+      "weak_pct": 0.3,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -82.47,
+          "minimum": -121.4,
+          "maximum": -48.0,
+          "count": 2104,
+          "weak_pct": 0.3
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 2991.0,
+          "maximum": 26791.0,
+          "count": 2027
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-N1-L21-20260112",
+      "segment_id": "N1",
+      "segment_name": "北段",
+      "operator": "TWM",
+      "layer": "L21",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -86.28,
+        "minimum": -114.49,
+        "maximum": -64.61,
+        "count": 2022,
+        "weak_pct": 0.7
+      },
+      "weak_pct": 0.7,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -86.28,
+          "minimum": -114.49,
+          "maximum": -64.61,
+          "count": 2022,
+          "weak_pct": 0.7
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 3259.0,
+          "maximum": 57832.0,
+          "count": 1911
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-N1-L26-20260112",
+      "segment_id": "N1",
+      "segment_name": "北段",
+      "operator": "TWM",
+      "layer": "L26",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -83.03,
+        "minimum": -110.0,
+        "maximum": -53.54,
+        "count": 2016,
+        "weak_pct": 0.2
+      },
+      "weak_pct": 0.2,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -83.03,
+          "minimum": -110.0,
+          "maximum": -53.54,
+          "count": 2016,
+          "weak_pct": 0.2
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 3267.0,
+          "maximum": 60885.0,
+          "count": 1930
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-cht-N1-20260316",
+      "segment_id": "N1",
+      "segment_name": "北段",
+      "operator": "CHT",
+      "layer": "ifMDT",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -85.15,
+        "minimum": -118.81,
+        "maximum": -59.82,
+        "count": 2109,
+        "weak_pct": 1.3
+      },
+      "weak_pct": 1.3,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -85.15,
+          "minimum": -118.81,
+          "maximum": -59.82,
+          "count": 2109,
+          "weak_pct": 1.3
+        },
+        "rsrp_4g_max": {
+          "mean": -59.77,
+          "minimum": -108.0,
+          "maximum": -43.0,
+          "count": 2109,
+          "weak_pct": 0.1
+        }
+      }
+    },
+    {
+      "id": "mdt-fet-N1-20260316",
+      "segment_id": "N1",
+      "segment_name": "北段",
+      "operator": "FET",
+      "layer": "ifMDT",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -86.34,
+        "minimum": -118.5,
+        "maximum": -59.67,
+        "count": 2111,
+        "weak_pct": 2.9
+      },
+      "weak_pct": 2.9,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -86.34,
+          "minimum": -118.5,
+          "maximum": -59.67,
+          "count": 2111,
+          "weak_pct": 2.9
+        },
+        "rsrp_4g_max": {
+          "mean": -58.59,
+          "minimum": -112.0,
+          "maximum": -43.0,
+          "count": 2111,
+          "weak_pct": 0.2
+        }
+      }
+    },
+    {
+      "id": "mdt-twm-N1-L7-20260316",
+      "segment_id": "N1",
+      "segment_name": "北段",
+      "operator": "TWM",
+      "layer": "L7",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -82.36,
+        "minimum": -112.49,
+        "maximum": -53.14,
+        "count": 1966,
+        "weak_pct": 0.6
+      },
+      "weak_pct": 0.6,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -82.36,
+          "minimum": -112.49,
+          "maximum": -53.14,
+          "count": 1966,
+          "weak_pct": 0.6
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 3544.0,
+          "maximum": 28169.0,
+          "count": 1879
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-N1-L9-20260316",
+      "segment_id": "N1",
+      "segment_name": "北段",
+      "operator": "TWM",
+      "layer": "L9",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -79.98,
+        "minimum": -132.47,
+        "maximum": -48.65,
+        "count": 1292,
+        "weak_pct": 1.9
+      },
+      "weak_pct": 1.9,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -79.98,
+          "minimum": -132.47,
+          "maximum": -48.65,
+          "count": 1292,
+          "weak_pct": 1.9
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 1708.0,
+          "maximum": 14657.0,
+          "count": 1080
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-N1-L18-20260316",
+      "segment_id": "N1",
+      "segment_name": "北段",
+      "operator": "TWM",
+      "layer": "L18",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -82.33,
+        "minimum": -112.0,
+        "maximum": -58.84,
+        "count": 2078,
+        "weak_pct": 0.5
+      },
+      "weak_pct": 0.5,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -82.33,
+          "minimum": -112.0,
+          "maximum": -58.84,
+          "count": 2078,
+          "weak_pct": 0.5
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 2943.0,
+          "maximum": 59033.0,
+          "count": 2001
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-N1-L21-20260316",
+      "segment_id": "N1",
+      "segment_name": "北段",
+      "operator": "TWM",
+      "layer": "L21",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -86.28,
+        "minimum": -113.64,
+        "maximum": -64.19,
+        "count": 2034,
+        "weak_pct": 0.9
+      },
+      "weak_pct": 0.9,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -86.28,
+          "minimum": -113.64,
+          "maximum": -64.19,
+          "count": 2034,
+          "weak_pct": 0.9
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 3084.0,
+          "maximum": 49014.0,
+          "count": 1918
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-N1-L26-20260316",
+      "segment_id": "N1",
+      "segment_name": "北段",
+      "operator": "TWM",
+      "layer": "L26",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -83.02,
+        "minimum": -116.47,
+        "maximum": -61.71,
+        "count": 2034,
+        "weak_pct": 0.4
+      },
+      "weak_pct": 0.4,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -83.02,
+          "minimum": -116.47,
+          "maximum": -61.71,
+          "count": 2034,
+          "weak_pct": 0.4
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 3185.0,
+          "maximum": 60986.0,
+          "count": 1929
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-cht-N2-20260112",
+      "segment_id": "N2",
+      "segment_name": "北中段",
+      "operator": "CHT",
+      "layer": "ifMDT",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -92.09,
+        "minimum": -130.0,
+        "maximum": -57.5,
+        "count": 12362,
+        "weak_pct": 8.4
+      },
+      "weak_pct": 8.4,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -92.09,
+          "minimum": -130.0,
+          "maximum": -57.5,
+          "count": 12362,
+          "weak_pct": 8.4
+        },
+        "rsrp_4g_max": {
+          "mean": -72.93,
+          "minimum": -130.0,
+          "maximum": -43.0,
+          "count": 12362,
+          "weak_pct": 1.9
+        }
+      }
+    },
+    {
+      "id": "mdt-fet-N2-20260112",
+      "segment_id": "N2",
+      "segment_name": "北中段",
+      "operator": "FET",
+      "layer": "ifMDT",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -93.2,
+        "minimum": -132.67,
+        "maximum": -60.0,
+        "count": 12351,
+        "weak_pct": 10.2
+      },
+      "weak_pct": 10.2,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -93.2,
+          "minimum": -132.67,
+          "maximum": -60.0,
+          "count": 12351,
+          "weak_pct": 10.2
+        },
+        "rsrp_4g_max": {
+          "mean": -72.98,
+          "minimum": -132.0,
+          "maximum": -43.0,
+          "count": 12351,
+          "weak_pct": 2.0
+        }
+      }
+    },
+    {
+      "id": "mdt-twm-N2-L7-20260112",
+      "segment_id": "N2",
+      "segment_name": "北中段",
+      "operator": "TWM",
+      "layer": "L7",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -88.82,
+        "minimum": -131.6,
+        "maximum": -47.57,
+        "count": 10247,
+        "weak_pct": 5.6
+      },
+      "weak_pct": 5.6,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -88.82,
+          "minimum": -131.6,
+          "maximum": -47.57,
+          "count": 10247,
+          "weak_pct": 5.6
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 2578.0,
+          "maximum": 47137.0,
+          "count": 7144
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-N2-L9-20260112",
+      "segment_id": "N2",
+      "segment_name": "北中段",
+      "operator": "TWM",
+      "layer": "L9",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -86.46,
+        "minimum": -134.0,
+        "maximum": -43.91,
+        "count": 2933,
+        "weak_pct": 10.2
+      },
+      "weak_pct": 10.2,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -86.46,
+          "minimum": -134.0,
+          "maximum": -43.91,
+          "count": 2933,
+          "weak_pct": 10.2
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 1284.0,
+          "maximum": 22294.0,
+          "count": 1915
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-N2-L18-20260112",
+      "segment_id": "N2",
+      "segment_name": "北中段",
+      "operator": "TWM",
+      "layer": "L18",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -87.98,
+        "minimum": -129.0,
+        "maximum": -45.0,
+        "count": 12433,
+        "weak_pct": 3.7
+      },
+      "weak_pct": 3.7,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -87.98,
+          "minimum": -129.0,
+          "maximum": -45.0,
+          "count": 12433,
+          "weak_pct": 3.7
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 2317.0,
+          "maximum": 72878.0,
+          "count": 8459
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-N2-L21-20260112",
+      "segment_id": "N2",
+      "segment_name": "北中段",
+      "operator": "TWM",
+      "layer": "L21",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -90.02,
+        "minimum": -127.0,
+        "maximum": -54.4,
+        "count": 10822,
+        "weak_pct": 4.0
+      },
+      "weak_pct": 4.0,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -90.02,
+          "minimum": -127.0,
+          "maximum": -54.4,
+          "count": 10822,
+          "weak_pct": 4.0
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 2671.0,
+          "maximum": 56825.0,
+          "count": 6968
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-N2-L26-20260112",
+      "segment_id": "N2",
+      "segment_name": "北中段",
+      "operator": "TWM",
+      "layer": "L26",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -88.26,
+        "minimum": -128.1,
+        "maximum": -43.0,
+        "count": 8177,
+        "weak_pct": 4.1
+      },
+      "weak_pct": 4.1,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -88.26,
+          "minimum": -128.1,
+          "maximum": -43.0,
+          "count": 8177,
+          "weak_pct": 4.1
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 2534.0,
+          "maximum": 53932.0,
+          "count": 6143
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-cht-N2-20260316",
+      "segment_id": "N2",
+      "segment_name": "北中段",
+      "operator": "CHT",
+      "layer": "ifMDT",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -92.09,
+        "minimum": -130.0,
+        "maximum": -50.0,
+        "count": 12302,
+        "weak_pct": 8.4
+      },
+      "weak_pct": 8.4,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -92.09,
+          "minimum": -130.0,
+          "maximum": -50.0,
+          "count": 12302,
+          "weak_pct": 8.4
+        },
+        "rsrp_4g_max": {
+          "mean": -73.26,
+          "minimum": -129.0,
+          "maximum": -43.0,
+          "count": 12302,
+          "weak_pct": 2.0
+        }
+      }
+    },
+    {
+      "id": "mdt-fet-N2-20260316",
+      "segment_id": "N2",
+      "segment_name": "北中段",
+      "operator": "FET",
+      "layer": "ifMDT",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -92.75,
+        "minimum": -133.0,
+        "maximum": -55.5,
+        "count": 12315,
+        "weak_pct": 9.4
+      },
+      "weak_pct": 9.4,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -92.75,
+          "minimum": -133.0,
+          "maximum": -55.5,
+          "count": 12315,
+          "weak_pct": 9.4
+        },
+        "rsrp_4g_max": {
+          "mean": -72.51,
+          "minimum": -133.0,
+          "maximum": -43.0,
+          "count": 12315,
+          "weak_pct": 2.0
+        }
+      }
+    },
+    {
+      "id": "mdt-twm-N2-L7-20260316",
+      "segment_id": "N2",
+      "segment_name": "北中段",
+      "operator": "TWM",
+      "layer": "L7",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -88.37,
+        "minimum": -129.92,
+        "maximum": -43.0,
+        "count": 10180,
+        "weak_pct": 5.3
+      },
+      "weak_pct": 5.3,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -88.37,
+          "minimum": -129.92,
+          "maximum": -43.0,
+          "count": 10180,
+          "weak_pct": 5.3
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 2479.0,
+          "maximum": 53357.0,
+          "count": 7151
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-N2-L9-20260316",
+      "segment_id": "N2",
+      "segment_name": "北中段",
+      "operator": "TWM",
+      "layer": "L9",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -86.12,
+        "minimum": -135.89,
+        "maximum": -44.45,
+        "count": 2443,
+        "weak_pct": 9.3
+      },
+      "weak_pct": 9.3,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -86.12,
+          "minimum": -135.89,
+          "maximum": -44.45,
+          "count": 2443,
+          "weak_pct": 9.3
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 1330.0,
+          "maximum": 17941.0,
+          "count": 1491
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-N2-L18-20260316",
+      "segment_id": "N2",
+      "segment_name": "北中段",
+      "operator": "TWM",
+      "layer": "L18",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -87.25,
+        "minimum": -126.0,
+        "maximum": -43.0,
+        "count": 12431,
+        "weak_pct": 3.6
+      },
+      "weak_pct": 3.6,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -87.25,
+          "minimum": -126.0,
+          "maximum": -43.0,
+          "count": 12431,
+          "weak_pct": 3.6
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 2330.0,
+          "maximum": 63870.0,
+          "count": 8531
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-N2-L21-20260316",
+      "segment_id": "N2",
+      "segment_name": "北中段",
+      "operator": "TWM",
+      "layer": "L21",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -89.93,
+        "minimum": -125.71,
+        "maximum": -51.71,
+        "count": 10690,
+        "weak_pct": 4.1
+      },
+      "weak_pct": 4.1,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -89.93,
+          "minimum": -125.71,
+          "maximum": -51.71,
+          "count": 10690,
+          "weak_pct": 4.1
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 2457.0,
+          "maximum": 52256.0,
+          "count": 6939
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-N2-L26-20260316",
+      "segment_id": "N2",
+      "segment_name": "北中段",
+      "operator": "TWM",
+      "layer": "L26",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -88.06,
+        "minimum": -127.27,
+        "maximum": -54.19,
+        "count": 8086,
+        "weak_pct": 3.8
+      },
+      "weak_pct": 3.8,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -88.06,
+          "minimum": -127.27,
+          "maximum": -54.19,
+          "count": 8086,
+          "weak_pct": 3.8
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 2393.0,
+          "maximum": 57346.0,
+          "count": 6023
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-cht-C-20260112",
+      "segment_id": "C",
+      "segment_name": "中段",
+      "operator": "CHT",
+      "layer": "ifMDT",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -92.85,
+        "minimum": -134.0,
+        "maximum": -50.0,
+        "count": 23147,
+        "weak_pct": 7.6
+      },
+      "weak_pct": 7.6,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -92.85,
+          "minimum": -134.0,
+          "maximum": -50.0,
+          "count": 23147,
+          "weak_pct": 7.6
+        },
+        "rsrp_4g_max": {
+          "mean": -80.95,
+          "minimum": -134.0,
+          "maximum": -43.0,
+          "count": 23147,
+          "weak_pct": 2.3
+        }
+      }
+    },
+    {
+      "id": "mdt-fet-C-20260112",
+      "segment_id": "C",
+      "segment_name": "中段",
+      "operator": "FET",
+      "layer": "ifMDT",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -97.95,
+        "minimum": -134.0,
+        "maximum": -57.0,
+        "count": 23015,
+        "weak_pct": 20.2
+      },
+      "weak_pct": 20.2,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -97.95,
+          "minimum": -134.0,
+          "maximum": -57.0,
+          "count": 23015,
+          "weak_pct": 20.2
+        },
+        "rsrp_4g_max": {
+          "mean": -82.81,
+          "minimum": -134.0,
+          "maximum": -43.0,
+          "count": 23015,
+          "weak_pct": 3.7
+        }
+      }
+    },
+    {
+      "id": "mdt-twm-C-L7-20260112",
+      "segment_id": "C",
+      "segment_name": "中段",
+      "operator": "TWM",
+      "layer": "L7",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -91.48,
+        "minimum": -136.84,
+        "maximum": -48.0,
+        "count": 17182,
+        "weak_pct": 8.1
+      },
+      "weak_pct": 8.1,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -91.48,
+          "minimum": -136.84,
+          "maximum": -48.0,
+          "count": 17182,
+          "weak_pct": 8.1
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 2227.0,
+          "maximum": 88618.0,
+          "count": 8130
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-C-L9-20260112",
+      "segment_id": "C",
+      "segment_name": "中段",
+      "operator": "TWM",
+      "layer": "L9",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -89.85,
+        "minimum": -134.52,
+        "maximum": -45.0,
+        "count": 2159,
+        "weak_pct": 11.3
+      },
+      "weak_pct": 11.3,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -89.85,
+          "minimum": -134.52,
+          "maximum": -45.0,
+          "count": 2159,
+          "weak_pct": 11.3
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 976.0,
+          "maximum": 19234.0,
+          "count": 1166
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-C-L18-20260112",
+      "segment_id": "C",
+      "segment_name": "中段",
+      "operator": "TWM",
+      "layer": "L18",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -90.75,
+        "minimum": -129.78,
+        "maximum": -50.35,
+        "count": 24298,
+        "weak_pct": 5.3
+      },
+      "weak_pct": 5.3,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -90.75,
+          "minimum": -129.78,
+          "maximum": -50.35,
+          "count": 24298,
+          "weak_pct": 5.3
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 1719.0,
+          "maximum": 61871.0,
+          "count": 12193
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-C-L21-20260112",
+      "segment_id": "C",
+      "segment_name": "中段",
+      "operator": "TWM",
+      "layer": "L21",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -92.18,
+        "minimum": -128.66,
+        "maximum": -51.95,
+        "count": 16733,
+        "weak_pct": 7.6
+      },
+      "weak_pct": 7.6,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -92.18,
+          "minimum": -128.66,
+          "maximum": -51.95,
+          "count": 16733,
+          "weak_pct": 7.6
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 1809.0,
+          "maximum": 56554.0,
+          "count": 6342
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-C-L26-20260112",
+      "segment_id": "C",
+      "segment_name": "中段",
+      "operator": "TWM",
+      "layer": "L26",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -92.08,
+        "minimum": -132.48,
+        "maximum": -58.23,
+        "count": 8324,
+        "weak_pct": 8.0
+      },
+      "weak_pct": 8.0,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -92.08,
+          "minimum": -132.48,
+          "maximum": -58.23,
+          "count": 8324,
+          "weak_pct": 8.0
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 1728.0,
+          "maximum": 44808.0,
+          "count": 4027
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-cht-C-20260316",
+      "segment_id": "C",
+      "segment_name": "中段",
+      "operator": "CHT",
+      "layer": "ifMDT",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -92.57,
+        "minimum": -134.0,
+        "maximum": -52.0,
+        "count": 23130,
+        "weak_pct": 7.4
+      },
+      "weak_pct": 7.4,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -92.57,
+          "minimum": -134.0,
+          "maximum": -52.0,
+          "count": 23130,
+          "weak_pct": 7.4
+        },
+        "rsrp_4g_max": {
+          "mean": -80.68,
+          "minimum": -134.0,
+          "maximum": -43.0,
+          "count": 23130,
+          "weak_pct": 2.3
+        }
+      }
+    },
+    {
+      "id": "mdt-fet-C-20260316",
+      "segment_id": "C",
+      "segment_name": "中段",
+      "operator": "FET",
+      "layer": "ifMDT",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -97.92,
+        "minimum": -134.0,
+        "maximum": -59.0,
+        "count": 23009,
+        "weak_pct": 19.2
+      },
+      "weak_pct": 19.2,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -97.92,
+          "minimum": -134.0,
+          "maximum": -59.0,
+          "count": 23009,
+          "weak_pct": 19.2
+        },
+        "rsrp_4g_max": {
+          "mean": -82.71,
+          "minimum": -134.0,
+          "maximum": -43.0,
+          "count": 23009,
+          "weak_pct": 4.1
+        }
+      }
+    },
+    {
+      "id": "mdt-twm-C-L7-20260316",
+      "segment_id": "C",
+      "segment_name": "中段",
+      "operator": "TWM",
+      "layer": "L7",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -91.71,
+        "minimum": -140.0,
+        "maximum": -43.0,
+        "count": 17770,
+        "weak_pct": 8.0
+      },
+      "weak_pct": 8.0,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -91.71,
+          "minimum": -140.0,
+          "maximum": -43.0,
+          "count": 17770,
+          "weak_pct": 8.0
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 1926.0,
+          "maximum": 58716.0,
+          "count": 8528
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-C-L9-20260316",
+      "segment_id": "C",
+      "segment_name": "中段",
+      "operator": "TWM",
+      "layer": "L9",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -90.48,
+        "minimum": -131.65,
+        "maximum": -52.0,
+        "count": 2053,
+        "weak_pct": 11.8
+      },
+      "weak_pct": 11.8,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -90.48,
+          "minimum": -131.65,
+          "maximum": -52.0,
+          "count": 2053,
+          "weak_pct": 11.8
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 903.0,
+          "maximum": 15354.0,
+          "count": 1133
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-C-L18-20260316",
+      "segment_id": "C",
+      "segment_name": "中段",
+      "operator": "TWM",
+      "layer": "L18",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -90.77,
+        "minimum": -129.73,
+        "maximum": -53.97,
+        "count": 24241,
+        "weak_pct": 6.0
+      },
+      "weak_pct": 6.0,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -90.77,
+          "minimum": -129.73,
+          "maximum": -53.97,
+          "count": 24241,
+          "weak_pct": 6.0
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 1516.0,
+          "maximum": 55296.0,
+          "count": 12831
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-C-L21-20260316",
+      "segment_id": "C",
+      "segment_name": "中段",
+      "operator": "TWM",
+      "layer": "L21",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -92.18,
+        "minimum": -129.0,
+        "maximum": -47.0,
+        "count": 16947,
+        "weak_pct": 7.3
+      },
+      "weak_pct": 7.3,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -92.18,
+          "minimum": -129.0,
+          "maximum": -47.0,
+          "count": 16947,
+          "weak_pct": 7.3
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 1679.0,
+          "maximum": 66356.0,
+          "count": 6818
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-C-L26-20260316",
+      "segment_id": "C",
+      "segment_name": "中段",
+      "operator": "TWM",
+      "layer": "L26",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -92.02,
+        "minimum": -131.96,
+        "maximum": -43.0,
+        "count": 9031,
+        "weak_pct": 7.5
+      },
+      "weak_pct": 7.5,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -92.02,
+          "minimum": -131.96,
+          "maximum": -43.0,
+          "count": 9031,
+          "weak_pct": 7.5
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 1995.0,
+          "maximum": 70965.0,
+          "count": 4268
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-cht-S-20260112",
+      "segment_id": "S",
+      "segment_name": "南段",
+      "operator": "CHT",
+      "layer": "ifMDT",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -94.19,
+        "minimum": -128.33,
+        "maximum": -59.95,
+        "count": 14826,
+        "weak_pct": 6.7
+      },
+      "weak_pct": 6.7,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -94.19,
+          "minimum": -128.33,
+          "maximum": -59.95,
+          "count": 14826,
+          "weak_pct": 6.7
+        },
+        "rsrp_4g_max": {
+          "mean": -78.65,
+          "minimum": -125.0,
+          "maximum": -43.0,
+          "count": 14826,
+          "weak_pct": 1.7
+        }
+      }
+    },
+    {
+      "id": "mdt-fet-S-20260112",
+      "segment_id": "S",
+      "segment_name": "南段",
+      "operator": "FET",
+      "layer": "ifMDT",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -95.15,
+        "minimum": -129.5,
+        "maximum": -61.0,
+        "count": 14889,
+        "weak_pct": 9.7
+      },
+      "weak_pct": 9.7,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -95.15,
+          "minimum": -129.5,
+          "maximum": -61.0,
+          "count": 14889,
+          "weak_pct": 9.7
+        },
+        "rsrp_4g_max": {
+          "mean": -78.24,
+          "minimum": -129.0,
+          "maximum": -43.0,
+          "count": 14889,
+          "weak_pct": 1.8
+        }
+      }
+    },
+    {
+      "id": "mdt-twm-S-L7-20260112",
+      "segment_id": "S",
+      "segment_name": "南段",
+      "operator": "TWM",
+      "layer": "L7",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -88.0,
+        "minimum": -123.0,
+        "maximum": -45.64,
+        "count": 12124,
+        "weak_pct": 1.9
+      },
+      "weak_pct": 1.9,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -88.0,
+          "minimum": -123.0,
+          "maximum": -45.64,
+          "count": 12124,
+          "weak_pct": 1.9
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 2081.0,
+          "maximum": 63997.0,
+          "count": 8868
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-S-L9-20260112",
+      "segment_id": "S",
+      "segment_name": "南段",
+      "operator": "TWM",
+      "layer": "L9",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -88.27,
+        "minimum": -128.63,
+        "maximum": -53.28,
+        "count": 1543,
+        "weak_pct": 6.0
+      },
+      "weak_pct": 6.0,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -88.27,
+          "minimum": -128.63,
+          "maximum": -53.28,
+          "count": 1543,
+          "weak_pct": 6.0
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 941.0,
+          "maximum": 14054.0,
+          "count": 1067
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-S-L18-20260112",
+      "segment_id": "S",
+      "segment_name": "南段",
+      "operator": "TWM",
+      "layer": "L18",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -88.12,
+        "minimum": -126.0,
+        "maximum": -59.35,
+        "count": 15205,
+        "weak_pct": 1.7
+      },
+      "weak_pct": 1.7,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -88.12,
+          "minimum": -126.0,
+          "maximum": -59.35,
+          "count": 15205,
+          "weak_pct": 1.7
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 1684.0,
+          "maximum": 35957.0,
+          "count": 11487
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-S-L21-20260112",
+      "segment_id": "S",
+      "segment_name": "南段",
+      "operator": "TWM",
+      "layer": "L21",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -92.17,
+        "minimum": -128.93,
+        "maximum": -59.01,
+        "count": 10712,
+        "weak_pct": 3.8
+      },
+      "weak_pct": 3.8,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -92.17,
+          "minimum": -128.93,
+          "maximum": -59.01,
+          "count": 10712,
+          "weak_pct": 3.8
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 1687.0,
+          "maximum": 53084.0,
+          "count": 7442
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-S-L26-20260112",
+      "segment_id": "S",
+      "segment_name": "南段",
+      "operator": "TWM",
+      "layer": "L26",
+      "tech": "4G",
+      "date": "20260112",
+      "date_label": "2026/01/12",
+      "stats": {
+        "mean": -90.13,
+        "minimum": -129.31,
+        "maximum": -55.9,
+        "count": 7770,
+        "weak_pct": 3.5
+      },
+      "weak_pct": 3.5,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -90.13,
+          "minimum": -129.31,
+          "maximum": -55.9,
+          "count": 7770,
+          "weak_pct": 3.5
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 1967.0,
+          "maximum": 58135.0,
+          "count": 5472
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-cht-S-20260316",
+      "segment_id": "S",
+      "segment_name": "南段",
+      "operator": "CHT",
+      "layer": "ifMDT",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -94.21,
+        "minimum": -128.0,
+        "maximum": -49.0,
+        "count": 15411,
+        "weak_pct": 5.8
+      },
+      "weak_pct": 5.8,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -94.21,
+          "minimum": -128.0,
+          "maximum": -49.0,
+          "count": 15411,
+          "weak_pct": 5.8
+        },
+        "rsrp_4g_max": {
+          "mean": -78.3,
+          "minimum": -128.0,
+          "maximum": -43.0,
+          "count": 15411,
+          "weak_pct": 1.3
+        }
+      }
+    },
+    {
+      "id": "mdt-fet-S-20260316",
+      "segment_id": "S",
+      "segment_name": "南段",
+      "operator": "FET",
+      "layer": "ifMDT",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -95.12,
+        "minimum": -129.5,
+        "maximum": -59.0,
+        "count": 15453,
+        "weak_pct": 8.4
+      },
+      "weak_pct": 8.4,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -95.12,
+          "minimum": -129.5,
+          "maximum": -59.0,
+          "count": 15453,
+          "weak_pct": 8.4
+        },
+        "rsrp_4g_max": {
+          "mean": -77.84,
+          "minimum": -128.0,
+          "maximum": -43.0,
+          "count": 15453,
+          "weak_pct": 1.3
+        }
+      }
+    },
+    {
+      "id": "mdt-twm-S-L7-20260316",
+      "segment_id": "S",
+      "segment_name": "南段",
+      "operator": "TWM",
+      "layer": "L7",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -88.09,
+        "minimum": -128.9,
+        "maximum": -43.0,
+        "count": 12878,
+        "weak_pct": 1.7
+      },
+      "weak_pct": 1.7,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -88.09,
+          "minimum": -128.9,
+          "maximum": -43.0,
+          "count": 12878,
+          "weak_pct": 1.7
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 1983.0,
+          "maximum": 43304.0,
+          "count": 9519
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-S-L9-20260316",
+      "segment_id": "S",
+      "segment_name": "南段",
+      "operator": "TWM",
+      "layer": "L9",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -89.11,
+        "minimum": -127.76,
+        "maximum": -50.96,
+        "count": 1538,
+        "weak_pct": 7.1
+      },
+      "weak_pct": 7.1,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -89.11,
+          "minimum": -127.76,
+          "maximum": -50.96,
+          "count": 1538,
+          "weak_pct": 7.1
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 943.0,
+          "maximum": 18962.0,
+          "count": 993
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-S-L18-20260316",
+      "segment_id": "S",
+      "segment_name": "南段",
+      "operator": "TWM",
+      "layer": "L18",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -88.02,
+        "minimum": -125.67,
+        "maximum": -58.0,
+        "count": 15588,
+        "weak_pct": 1.2
+      },
+      "weak_pct": 1.2,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -88.02,
+          "minimum": -125.67,
+          "maximum": -58.0,
+          "count": 15588,
+          "weak_pct": 1.2
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 1643.0,
+          "maximum": 47484.0,
+          "count": 11742
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-S-L21-20260316",
+      "segment_id": "S",
+      "segment_name": "南段",
+      "operator": "TWM",
+      "layer": "L21",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -92.24,
+        "minimum": -133.96,
+        "maximum": -58.0,
+        "count": 11134,
+        "weak_pct": 3.8
+      },
+      "weak_pct": 3.8,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -92.24,
+          "minimum": -133.96,
+          "maximum": -58.0,
+          "count": 11134,
+          "weak_pct": 3.8
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 1693.0,
+          "maximum": 53080.0,
+          "count": 7644
+        },
+        "nr_availability_pct": 100.0
+      }
+    },
+    {
+      "id": "mdt-twm-S-L26-20260316",
+      "segment_id": "S",
+      "segment_name": "南段",
+      "operator": "TWM",
+      "layer": "L26",
+      "tech": "4G",
+      "date": "20260316",
+      "date_label": "2026/03/16",
+      "stats": {
+        "mean": -90.16,
+        "minimum": -126.0,
+        "maximum": -57.5,
+        "count": 8016,
+        "weak_pct": 3.7
+      },
+      "weak_pct": 3.7,
+      "kpi": {
+        "rsrp_4g": {
+          "mean": -90.16,
+          "minimum": -126.0,
+          "maximum": -57.5,
+          "count": 8016,
+          "weak_pct": 3.7
+        },
+        "nr_tput_dl_kbps": {
+          "mean": 2010.0,
+          "maximum": 86413.0,
+          "count": 5559
+        },
+        "nr_availability_pct": 100.0
+      }
+    }
+  ]
+}
