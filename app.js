@@ -18,6 +18,17 @@ function rsrpLevel(rsrp) {
   return "poor";
 }
 
+/**
+ * 路線上色分級：以弱訊門檻統一判定。
+ * RSRP <= 門檻 → 紅色 (poor)；門檻以上沿用其餘等級色，且絕不使用紅色。
+ */
+function weakBucket(v) {
+  if (v == null || !Number.isFinite(v)) return "normal";
+  if (v <= weakThreshold) return "poor";
+  const lvl = rsrpLevel(v);
+  return lvl === "poor" ? "weak" : lvl;
+}
+
 const TILE_LAYERS = {
   dark: {
     url: "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
@@ -176,6 +187,14 @@ function getColors() {
   return RSRP_COLORS;
 }
 
+/** 依目前弱訊門檻更新地圖圖例（普通下界與弱訊紅色門檻） */
+function updateLegendThreshold() {
+  const n = document.getElementById("legendNormal");
+  const w = document.getElementById("legendWeak");
+  if (n) n.textContent = lang === "en" ? `Fair ${weakThreshold} ~ -95` : `普通 ${weakThreshold} ~ -95`;
+  if (w) w.textContent = lang === "en" ? `Weak ≤ ${weakThreshold} dBm` : `弱訊 ≤ ${weakThreshold} dBm`;
+}
+
 /** RSRP 平均值 → 品質標籤（5 級） */
 function qualityLabel(v) {
   if (v == null) return "—";
@@ -250,6 +269,7 @@ async function init() {
 
   lang = sessionStorage.getItem("hsrLang") === "en" ? "en" : "zh";
   applyLang();
+  updateLegendThreshold();
 
   currentTheme = lang === "en" ? "dark" : "light";
   document.body.dataset.theme = currentTheme;
@@ -489,6 +509,7 @@ function bindEvents() {
   document.getElementById("weakThreshold").addEventListener("input", (e) => {
     weakThreshold = parseInt(e.target.value, 10);
     document.getElementById("threshVal").textContent = weakThreshold;
+    updateLegendThreshold();
     if (currentRouteView && activeMode === "dt") refreshDtWeak();
     if (activeMode === "dt" && routeScopeFilter === "segment") renderRouteList();
   });
@@ -589,7 +610,9 @@ function refreshDtWeak() {
   const route = currentRouteView;
   if (!route) return;
   applyWeakThreshold(route);
+  routeLayer.clearLayers();
   weakLayer.clearLayers();
+  drawPoints(routeLayer, route.points, route, false, { fit: false });
   drawWeakZones(route);
   renderWeakList(route);
   renderKpiGrid(route, "dt", document.getElementById("dtKpiGrid"));
@@ -1480,7 +1503,7 @@ function drawColoredRoute(layer, points, route, isMdt, options = {}) {
   const targetMap = options.map || map;
   const metric = options.metric || dtColorMetric;
   const valOf = (p) => (metric === "5G" ? p.nr_rsrp : p.rsrp);
-  const lvlOf = (p) => rsrpLevel(valOf(p));
+  const lvlOf = (p) => weakBucket(valOf(p));
   let valid = points.filter((p) => isValidPoint(p) && valOf(p) != null);
   if (valid.length < 2) return [];
 

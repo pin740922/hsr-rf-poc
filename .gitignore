@@ -3,6 +3,10 @@ __pycache__/
 *.zip
 .DS_Store
 
+# 機密設定與產生的報告
+.env
+reports/
+
 # 不對外發佈：資料產生器（含原始來源路徑/檔名）與未使用的資料檔
 build_data.py
 data/routes.json
