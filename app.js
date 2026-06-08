@@ -577,15 +577,22 @@ function computeWeakZones(points, binKm = 2, threshold = weakThreshold) {
     bins[km].lons.push(p.lon);
   });
   return Object.entries(bins)
-    .map(([km, b]) => ({
-      km_start: parseFloat(km),
-      km_end: parseFloat(km) + binKm,
-      avg_rsrp: Math.round((b.rsrps.reduce((a, c) => a + c, 0) / b.rsrps.length) * 10) / 10,
-      min_rsrp: Math.min(...b.rsrps),
-      samples: b.rsrps.length,
-      lat: b.lats.reduce((a, c) => a + c, 0) / b.lats.length,
-      lon: b.lons.reduce((a, c) => a + c, 0) / b.lons.length,
-    }))
+    .map(([km, b]) => {
+      // 標示點放在區段內 RSRP 最差的點，確保紅點落在紅色弱訊處
+      let minIdx = 0;
+      for (let i = 1; i < b.rsrps.length; i++) {
+        if (b.rsrps[i] < b.rsrps[minIdx]) minIdx = i;
+      }
+      return {
+        km_start: parseFloat(km),
+        km_end: parseFloat(km) + binKm,
+        avg_rsrp: Math.round((b.rsrps.reduce((a, c) => a + c, 0) / b.rsrps.length) * 10) / 10,
+        min_rsrp: Math.min(...b.rsrps),
+        samples: b.rsrps.length,
+        lat: b.lats[minIdx],
+        lon: b.lons[minIdx],
+      };
+    })
     .filter((z) => z.avg_rsrp <= threshold)
     .sort((a, b) => a.avg_rsrp - b.avg_rsrp)
     .slice(0, 8);

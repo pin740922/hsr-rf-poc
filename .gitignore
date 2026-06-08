@@ -12,3 +12,9 @@ build_data.py
 data/routes.json
 data/compare.json
 data/hsr_corridor.json
+
+# 不對外發佈：後端 AI 報告工具與環境設定
+ai_report.py
+AI_REPORT_README.md
+.env.example
+.env
